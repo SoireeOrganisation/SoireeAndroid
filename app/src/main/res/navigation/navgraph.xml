@@ -7,16 +7,16 @@
     <fragment
         android:id="@+id/reviewFragment"
         android:name="com.example.myapplication.UI.ReviewFragment"
-        android:label="fragment_review"
+        android:label="@string/review"
         tools:layout="@layout/fragment_review" />
     <fragment
         android:id="@+id/statisticsFragment"
         android:name="com.example.myapplication.UI.StatisticsFragment"
-        android:label="fragment_statistics"
+        android:label="@string/statistics"
         tools:layout="@layout/fragment_statistics" />
     <fragment
         android:id="@+id/rewardsFragment"
         android:name="com.example.myapplication.UI.RewardsFragment"
-        android:label="fragment_rewards"
+        android:label="@string/rewards"
         tools:layout="@layout/fragment_rewards" />
 </navigation>
