@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,17 +8,18 @@ import androidx.core.view.GravityCompat
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.ui.*
+import com.example.myapplication.R
 import com.example.myapplication.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private val navController: NavController by lazy {
         Navigation.findNavController(this, R.id.nav_host_fragment)
     }
-    private var _binding: ActivityMainBinding? = null
-    private val binding: ActivityMainBinding
-        get() = _binding!!
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var toggle: ActionBarDrawerToggle
+    private var _binding : ActivityMainBinding? = null
+    private val binding : ActivityMainBinding
+        get() = _binding!!
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         _binding = ActivityMainBinding.inflate(layoutInflater)
