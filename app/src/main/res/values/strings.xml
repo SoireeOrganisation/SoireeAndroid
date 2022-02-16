@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">My Application</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="review">Review</string>
     <string name="statistics">Statistics</string>
     <string name="rewards">Rewards</string>
+    <string name="your_points">Your points %s</string>
 </resources>

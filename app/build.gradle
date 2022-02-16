@@ -2,6 +2,8 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
 }
+apply plugin: "io.gitlab.arturbosch.detekt"
+
 
 android {
     compileSdk 31
@@ -35,6 +37,7 @@ android {
         jvmTarget = '1.8'
     }
 }
+
 
 dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
