@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_statistics.xml",
+        "source": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/res/layout/fragment_statistics.xml"
+    },
+    {
+        "merged": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_review.xml",
+        "source": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/res/layout/fragment_review.xml"
+    },
+    {
+        "merged": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_rewards.xml",
+        "source": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/res/layout/fragment_rewards.xml"
+    }
+]
