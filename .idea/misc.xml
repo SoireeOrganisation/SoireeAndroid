@@ -4,6 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ustin/AndroidStudioProjects/SoireeAndroid/app/src/main/res/layout/activity_main.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/ustin/AndroidStudioProjects/SoireeAndroid/app/src/main/res/layout/fragment_review.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/ustin/AndroidStudioProjects/SoireeAndroid/app/src/main/res/layout/fragment_rewards.xml" value="0.46355685131195334" />
+        <entry key="..\:/Users/ustin/AndroidStudioProjects/SoireeAndroid/app/src/main/res/layout/fragment_statistics.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/ustin/AndroidStudioProjects/SoireeAndroid/app/src/main/res/layout/rewards_item.xml" value="0.264" />
+        <entry key="..\:/Users/ustin/AndroidStudioProjects/SoireeAndroid/app/src/main/res/menu/drawer_menu.xml" value="0.2328125" />
       </map>
     </option>
   </component>
