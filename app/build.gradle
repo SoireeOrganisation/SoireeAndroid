@@ -5,6 +5,7 @@ plugins {
 
 }
 apply plugin: "io.gitlab.arturbosch.detekt"
+apply plugin: 'kotlin-android'
 
 
 android {
@@ -61,4 +62,11 @@ dependencies {
     // network
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
+    implementation "androidx.core:core-ktx:+"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
+    google()
 }
