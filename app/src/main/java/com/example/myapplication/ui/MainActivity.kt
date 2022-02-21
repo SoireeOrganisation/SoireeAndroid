@@ -31,7 +31,6 @@ class MainActivity : AppCompatActivity() {
                 R.id.statisticsFragment
             ), binding.drawerLayout
         )
-        val a = 1-1
         toggle =
             ActionBarDrawerToggle(this, binding.drawerLayout, R.string.app_name, R.string.app_name)
         binding.drawerLayout.addDrawerListener(toggle)
