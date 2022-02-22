@@ -19,4 +19,9 @@
         android:name="com.example.myapplication.ui.rewards.RewardsFragment"
         android:label="@string/rewards"
         tools:layout="@layout/fragment_rewards" />
+    <fragment
+        android:id="@+id/reviewFragment2"
+        android:name="com.example.myapplication.ui.review.ReviewFragment"
+        android:label="review_fragment"
+        tools:layout="@layout/review_fragment" />
 </navigation>

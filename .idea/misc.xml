@@ -16,6 +16,7 @@
         <entry key="app/src/main/res/layout/fragment_staff.xml" value="0.18333333333333332" />
         <entry key="app/src/main/res/layout/fragment_statistics.xml" value="0.271286231884058" />
         <entry key="app/src/main/res/layout/review_fragment.xml" value="0.18333333333333332" />
+        <entry key="app/src/main/res/layout/review_item.xml" value="0.5" />
         <entry key="app/src/main/res/layout/rewards_item.xml" value="0.67" />
         <entry key="app/src/main/res/layout/staff_item.xml" value="0.25" />
       </map>

@@ -1906,7 +1906,6 @@ dimen appcompat_dialog_background_inset
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
-dimen cardview_height
 dimen clock_face_margin_start
 dimen compat_button_inset_horizontal_material
 dimen compat_button_inset_vertical_material
@@ -1977,6 +1976,7 @@ dimen hint_alpha_material_dark
 dimen hint_alpha_material_light
 dimen hint_pressed_alpha_material_dark
 dimen hint_pressed_alpha_material_light
+dimen horizontal_margin_textview
 dimen item_touch_helper_max_drag_scroll_per_frame
 dimen item_touch_helper_swipe_escape_max_velocity
 dimen item_touch_helper_swipe_escape_velocity
@@ -2410,6 +2410,7 @@ dimen tooltip_precise_anchor_threshold
 dimen tooltip_vertical_padding
 dimen tooltip_y_offset_non_touch
 dimen tooltip_y_offset_touch
+dimen vertical_margin_textview
 drawable abc_ab_share_pack_mtrl_alpha
 drawable abc_action_bar_item_background_material
 drawable abc_btn_borderless_material
@@ -2666,6 +2667,8 @@ id callMeasure
 id cancel_action
 id cancel_button
 id carryVelocity
+id category_average_textview
+id category_name_textview
 id center
 id center_horizontal
 id center_vertical
@@ -2917,6 +2920,7 @@ id rectangles
 id recyclerview_rewards
 id reverseSawtooth
 id reviewFragment
+id reviewFragment2
 id review_cardview
 id review_recycler_view
 id rewardsFragment
@@ -2987,6 +2991,7 @@ id startVertical
 id staticLayout
 id staticPostLayout
 id statisticsFragment
+id statistics_recyclerView
 id status_bar_latest_event_content
 id stop
 id stretch
@@ -3235,6 +3240,8 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout review_fragment
+layout review_item
 layout rewards_item
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
@@ -3293,6 +3300,7 @@ string abc_toolbar_collapse_description
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
+string average_mark
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
 string character_counter_content_description

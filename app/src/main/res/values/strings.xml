@@ -5,4 +5,5 @@
     <string name="statistics">Statistics</string>
     <string name="rewards">Rewards</string>
     <string name="your_points">Your points %s</string>
+    <string name="average_mark">Average: %.2f</string>
 </resources>

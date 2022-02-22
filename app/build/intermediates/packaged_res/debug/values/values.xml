@@ -7,9 +7,11 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
-    <dimen name="cardview_height">50dp</dimen>
+    <dimen name="horizontal_margin_textview">8dp</dimen>
     <dimen name="main_text_size">30sp</dimen>
+    <dimen name="vertical_margin_textview">15dp</dimen>
     <string name="app_name">Soiree</string>
+    <string name="average_mark">Average: %.2f</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="review">Review</string>
     <string name="rewards">Rewards</string>

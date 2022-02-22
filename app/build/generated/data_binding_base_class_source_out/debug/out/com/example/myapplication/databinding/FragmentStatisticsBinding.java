@@ -8,13 +8,24 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.example.myapplication.R;
 import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class FragmentStatisticsBinding extends ViewDataBinding {
-  protected FragmentStatisticsBinding(Object _bindingComponent, View _root, int _localFieldCount) {
+  @NonNull
+  public final RecyclerView statisticsRecyclerView;
+
+  @NonNull
+  public final SwipeRefreshLayout swipeRefreshLayout;
+
+  protected FragmentStatisticsBinding(Object _bindingComponent, View _root, int _localFieldCount,
+      RecyclerView statisticsRecyclerView, SwipeRefreshLayout swipeRefreshLayout) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.statisticsRecyclerView = statisticsRecyclerView;
+    this.swipeRefreshLayout = swipeRefreshLayout;
   }
 
   @NonNull

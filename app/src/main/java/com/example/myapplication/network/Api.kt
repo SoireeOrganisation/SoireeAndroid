@@ -1,6 +1,7 @@
 package com.example.myapplication.network
 
 import com.example.myapplication.data.BonusData
+import com.example.myapplication.data.ReviewData
 import com.example.myapplication.data.StaffData
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
@@ -20,6 +21,9 @@ interface ApiService {
 
     @GET("api/bonuses")
     suspend fun getBonuses(@Query("key") key: String = DEBUG_KEY): List<BonusData>
+
+    @GET("api/reviews")
+    suspend fun getReviews(@Query("key") key: String = DEBUG_KEY): List<ReviewData>
 }
 
 
