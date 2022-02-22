@@ -9,23 +9,23 @@ import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.example.myapplication.R;
-import com.google.android.material.textview.MaterialTextView;
 import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class FragmentRewardsBinding extends ViewDataBinding {
   @NonNull
-  public final MaterialTextView bonusCount;
-
-  @NonNull
   public final RecyclerView recyclerviewRewards;
 
+  @NonNull
+  public final SwipeRefreshLayout swipeRefreshLayout;
+
   protected FragmentRewardsBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      MaterialTextView bonusCount, RecyclerView recyclerviewRewards) {
+      RecyclerView recyclerviewRewards, SwipeRefreshLayout swipeRefreshLayout) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.bonusCount = bonusCount;
     this.recyclerviewRewards = recyclerviewRewards;
+    this.swipeRefreshLayout = swipeRefreshLayout;
   }
 
   @NonNull

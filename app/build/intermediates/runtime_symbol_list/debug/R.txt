@@ -1003,6 +1003,7 @@ int attr suffixText 0x7f0303a1
 int attr suffixTextAppearance 0x7f0303a2
 int attr suffixTextColor 0x7f0303a3
 int attr suggestionRowLayout 0x7f0303a4
+int attr swipeRefreshLayoutProgressSpinnerBackgroundColor 0x7f03046e
 int attr switchMinWidth 0x7f0303a5
 int attr switchPadding 0x7f0303a6
 int attr switchStyle 0x7f0303a7
@@ -1904,6 +1905,7 @@ int dimen appcompat_dialog_background_inset 0x7f060052
 int dimen cardview_compat_inset_shadow 0x7f060053
 int dimen cardview_default_elevation 0x7f060054
 int dimen cardview_default_radius 0x7f060055
+int dimen cardview_height 0x7f06024d
 int dimen clock_face_margin_start 0x7f060056
 int dimen compat_button_inset_horizontal_material 0x7f060057
 int dimen compat_button_inset_vertical_material 0x7f060058
@@ -2133,6 +2135,7 @@ int dimen m3_sys_typescale_title_small_letter_spacing 0x7f060137
 int dimen m3_sys_typescale_title_small_text_size 0x7f060138
 int dimen m3_timepicker_display_stroke_width 0x7f060139
 int dimen m3_timepicker_window_elevation 0x7f06013a
+int dimen main_text_size 0x7f06024c
 int dimen material_bottom_sheet_max_width 0x7f06013b
 int dimen material_clock_display_padding 0x7f06013c
 int dimen material_clock_face_margin_top 0x7f06013d
@@ -2651,7 +2654,6 @@ int id beginOnFirstDraw 0x7f08005b
 int id beginning 0x7f08005c
 int id bestChoice 0x7f08005d
 int id blocking 0x7f08005e
-int id bonus_count 0x7f08005f
 int id bottom 0x7f080060
 int id bounce 0x7f080061
 int id bounceBoth 0x7f080062
@@ -2905,7 +2907,6 @@ int id percent 0x7f080159
 int id pin 0x7f08015a
 int id position 0x7f08015b
 int id postLayout 0x7f08015c
-int id price_textview 0x7f08015d
 int id progress_circular 0x7f08015e
 int id progress_horizontal 0x7f08015f
 int id radio 0x7f080160
@@ -2991,6 +2992,7 @@ int id submenuarrow 0x7f0801ad
 int id submit_area 0x7f0801ae
 int id supportScrollUp 0x7f0801af
 int id surname_textview 0x7f0801fb
+int id swipe_refresh_layout 0x7f0801fc
 int id tabMode 0x7f0801b0
 int id tag_accessibility_actions 0x7f0801b1
 int id tag_accessibility_clickable_spans 0x7f0801b2
@@ -6178,6 +6180,8 @@ int[] styleable StateListDrawableItem { 0x01010199 }
 int styleable StateListDrawableItem_android_drawable 0
 int[] styleable StateSet { 0x7f030147 }
 int styleable StateSet_defaultState 0
+int[] styleable SwipeRefreshLayout { 0x7f03046e }
+int styleable SwipeRefreshLayout_swipeRefreshLayoutProgressSpinnerBackgroundColor 0
 int[] styleable SwitchCompat { 0x01010124, 0x01010125, 0x01010142, 0x7f030369, 0x7f03037c, 0x7f0303a5, 0x7f0303a6, 0x7f0303a8, 0x7f030413, 0x7f030414, 0x7f030415, 0x7f030439, 0x7f030440, 0x7f030441 }
 int styleable SwitchCompat_android_textOn 0
 int styleable SwitchCompat_android_textOff 1

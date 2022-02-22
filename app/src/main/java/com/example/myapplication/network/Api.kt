@@ -1,5 +1,6 @@
 package com.example.myapplication.network
 
+import com.example.myapplication.data.BonusData
 import com.example.myapplication.data.StaffData
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
@@ -16,6 +17,9 @@ val retrofit: Retrofit =
 interface ApiService {
     @GET("/api/staff")
     suspend fun getStaff(@Query("key") key: String = DEBUG_KEY): List<StaffData>
+
+    @GET("api/bonuses")
+    suspend fun getBonuses(@Query("key") key: String = DEBUG_KEY): List<BonusData>
 }
 
 

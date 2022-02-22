@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import com.example.myapplication.adapters.RewardsRecyclerAdapter
-import com.example.myapplication.data.RewardsData
+import com.example.myapplication.data.BonusData
 import com.example.myapplication.databinding.FragmentRewardsBinding
 import kotlin.random.Random
 
@@ -30,10 +30,19 @@ class RewardsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val adapter = RewardsRecyclerAdapter(
-            requireContext(), generateData(100)
-        )
-        binding.recyclerviewRewards.adapter = adapter
+        viewModel.bonusesList.observe(viewLifecycleOwner) {
+            val adapter = RewardsRecyclerAdapter(
+                requireContext(), it
+            )
+            binding.recyclerviewRewards.adapter = adapter
+        }
+        viewModel.refreshStatus.observe(viewLifecycleOwner) {
+            binding.swipeRefreshLayout.isRefreshing = it
+        }
+        viewModel.getBonuses()
+        binding.swipeRefreshLayout.setOnRefreshListener {
+            viewModel.getBonuses()
+        }
     }
 
     override fun onDestroyView() {
@@ -41,11 +50,11 @@ class RewardsFragment : Fragment() {
         _binding = null
     }
 
-    private fun generateData(size: Int): List<RewardsData> {
+    private fun generateData(size: Int): List<BonusData> {
         val rnd = Random(1337)
-        val list: MutableList<RewardsData> = mutableListOf()
+        val list: MutableList<BonusData> = mutableListOf()
         for (i in 0 until size) {
-            list.add(RewardsData(rnd.nextInt(size).toString(), rnd.nextInt()))
+            list.add(BonusData(rnd.nextInt(size), rnd.nextInt().toString()))
         }
         return list.toList()
     }

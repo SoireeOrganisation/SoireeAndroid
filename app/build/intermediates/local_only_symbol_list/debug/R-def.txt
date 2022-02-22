@@ -7,15 +7,15 @@ color purple_700
 color teal_200
 color teal_700
 color white
+dimen cardview_height
+dimen main_text_size
 drawable ic_launcher_background
 drawable ic_launcher_foreground
-id bonus_count
 id drawer_layout
 id name_textview
 id nav_host_fragment
 id nav_view
 id navgraph
-id price_textview
 id recyclerview_rewards
 id reviewFragment
 id review_cardview
@@ -24,6 +24,7 @@ id rewardsFragment
 id rewards_cardview
 id statisticsFragment
 id surname_textview
+id swipe_refresh_layout
 layout activity_main
 layout fragment_review
 layout fragment_rewards
