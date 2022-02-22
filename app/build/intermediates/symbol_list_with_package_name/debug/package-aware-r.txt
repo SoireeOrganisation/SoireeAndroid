@@ -2903,6 +2903,7 @@ id parent_matrix
 id password_toggle
 id path
 id pathRelative
+id patronymic_textview
 id peekHeight
 id percent
 id pin
@@ -3170,8 +3171,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout fragment_review
 layout fragment_rewards
+layout fragment_staff
 layout fragment_statistics
 layout m3_alert_dialog
 layout m3_alert_dialog_actions

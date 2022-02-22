@@ -6,9 +6,9 @@
     app:startDestination="@id/reviewFragment">
     <fragment
         android:id="@+id/reviewFragment"
-        android:name="com.example.myapplication.ui.review.ReviewFragment"
+        android:name="com.example.myapplication.ui.staff.StaffFragment"
         android:label="@string/review"
-        tools:layout="@layout/fragment_review" />
+        tools:layout="@layout/fragment_staff" />
     <fragment
         android:id="@+id/statisticsFragment"
         android:name="com.example.myapplication.ui.statistics.StatisticsFragment"

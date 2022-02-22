@@ -37,6 +37,17 @@
             app:layout_constraintStart_toEndOf="@id/name_textview"
             app:layout_constraintTop_toTopOf="@+id/name_textview"
             tools:text="Ustinov" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id = "@+id/patronymic_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/main_text_size"
+            app:layout_constraintTop_toTopOf="@id/surname_textview"
+            app:layout_constraintBottom_toBottomOf="@id/surname_textview"
+            app:layout_constraintStart_toEndOf="@id/surname_textview"
+            android:layout_marginStart="20dp"
+            tools:text="Borisovich"
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>

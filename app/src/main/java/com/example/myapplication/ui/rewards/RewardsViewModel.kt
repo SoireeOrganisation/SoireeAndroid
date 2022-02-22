@@ -6,9 +6,8 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.myapplication.data.BonusData
-import com.example.myapplication.network.ApiService
 import com.example.myapplication.network.Client
-import com.example.myapplication.ui.review.TAG
+import com.example.myapplication.ui.staff.TAG
 import kotlinx.coroutines.launch
 import java.lang.Exception
 

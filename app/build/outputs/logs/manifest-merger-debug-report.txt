@@ -37,6 +37,7 @@ MERGED from [androidx.loader:loader:1.0.0] /home/hardes1/.gradle/caches/transfor
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.0-alpha02] /home/hardes1/.gradle/caches/transforms-3/29d9eb84e9d95eef48cf9974e6d41ce3/transformed/lifecycle-viewmodel-2.5.0-alpha02/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.0-alpha02] /home/hardes1/.gradle/caches/transforms-3/b325a1afd20c0b2a055efc61c62185d4/transformed/lifecycle-viewmodel-savedstate-2.5.0-alpha02/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core-ktx:1.7.0] /home/hardes1/.gradle/caches/transforms-3/4fb6ec9d0b4876c393ba10494b0cbea7/transformed/core-ktx-1.7.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /home/hardes1/.gradle/caches/transforms-3/5476209bcbd0e4fa5b13a44d549de09d/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.media:media:1.0.0] /home/hardes1/.gradle/caches/transforms-3/caf0ce99bf92f90e65c960224cbf4c4c/transformed/media-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /home/hardes1/.gradle/caches/transforms-3/3213645e7ac94f6b3a477e6d9fd3e594/transformed/appcompat-resources-1.4.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /home/hardes1/.gradle/caches/transforms-3/6e4644b6a613b19f73fd235bd03b5e3b/transformed/emoji2-views-helper-1.0.0/AndroidManifest.xml:17:1-24:12
@@ -46,7 +47,6 @@ MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/hardes1/.
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/hardes1/.gradle/caches/transforms-3/c070a1097bbd54108f8673e72e932fd0/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/hardes1/.gradle/caches/transforms-3/c52b806080d10a29cd9c0fdf6e9f84ed/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/hardes1/.gradle/caches/transforms-3/90da905f4b4c030340f988df9c065dff/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/hardes1/.gradle/caches/transforms-3/adf5645049edcb064df71a5f1a8f00f4/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/hardes1/.gradle/caches/transforms-3/3ff4bb6b301c0665ef0d3e588ea342aa/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/hardes1/.gradle/caches/transforms-3/1a0136296b1ee8255593ffb497528cef/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.customview:customview:1.1.0] /home/hardes1/.gradle/caches/transforms-3/018db87da2682a42f2bd9ecfa6a0747f/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
@@ -65,10 +65,10 @@ MERGED from [androidx.cardview:cardview:1.0.0] /home/hardes1/.gradle/caches/tran
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.5.0-alpha02] /home/hardes1/.gradle/caches/transforms-3/65e500e0d9fe9eb969d48237a666ce4c/transformed/lifecycle-livedata-2.5.0-alpha02/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.0-alpha02] /home/hardes1/.gradle/caches/transforms-3/11d60f7d105b6e1e4d599be8bcb46158/transformed/lifecycle-livedata-core-2.5.0-alpha02/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/hardes1/.gradle/caches/transforms-3/8ab3578a91e7b4a6286391e1ddf5e863/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/hardes1/.gradle/caches/transforms-3/ff28fe2184031e66b393d87570a9082e/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/hardes1/.gradle/caches/transforms-3/363fa82df8bce17cc6d680daa7608ff4/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/hardes1/.gradle/caches/transforms-3/e86e332b3e526453fdb1aa490915810a/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /home/hardes1/.gradle/caches/transforms-3/5ce3150cdb5b95529aea8403ab28cf8d/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/hardes1/.gradle/caches/transforms-3/ff28fe2184031e66b393d87570a9082e/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.startup:startup-runtime:1.0.0] /home/hardes1/.gradle/caches/transforms-3/a4832152918c3cb7b58359fa25ca9e45/transformed/startup-runtime-1.0.0/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] /home/hardes1/.gradle/caches/transforms-3/28b181562f31a4b8238a3d77ee1715e0/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/hardes1/.gradle/caches/transforms-3/067752726e65ece705920bf0851a08da/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
@@ -217,6 +217,8 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.0-alpha02] /h
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.0-alpha02] /home/hardes1/.gradle/caches/transforms-3/b325a1afd20c0b2a055efc61c62185d4/transformed/lifecycle-viewmodel-savedstate-2.5.0-alpha02/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core-ktx:1.7.0] /home/hardes1/.gradle/caches/transforms-3/4fb6ec9d0b4876c393ba10494b0cbea7/transformed/core-ktx-1.7.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.core:core-ktx:1.7.0] /home/hardes1/.gradle/caches/transforms-3/4fb6ec9d0b4876c393ba10494b0cbea7/transformed/core-ktx-1.7.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /home/hardes1/.gradle/caches/transforms-3/5476209bcbd0e4fa5b13a44d549de09d/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /home/hardes1/.gradle/caches/transforms-3/5476209bcbd0e4fa5b13a44d549de09d/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.media:media:1.0.0] /home/hardes1/.gradle/caches/transforms-3/caf0ce99bf92f90e65c960224cbf4c4c/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.media:media:1.0.0] /home/hardes1/.gradle/caches/transforms-3/caf0ce99bf92f90e65c960224cbf4c4c/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /home/hardes1/.gradle/caches/transforms-3/3213645e7ac94f6b3a477e6d9fd3e594/transformed/appcompat-resources-1.4.1/AndroidManifest.xml:20:5-22:41
@@ -235,8 +237,6 @@ MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/hardes1/.gradle
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/hardes1/.gradle/caches/transforms-3/c52b806080d10a29cd9c0fdf6e9f84ed/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/hardes1/.gradle/caches/transforms-3/90da905f4b4c030340f988df9c065dff/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/hardes1/.gradle/caches/transforms-3/90da905f4b4c030340f988df9c065dff/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/hardes1/.gradle/caches/transforms-3/adf5645049edcb064df71a5f1a8f00f4/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/hardes1/.gradle/caches/transforms-3/adf5645049edcb064df71a5f1a8f00f4/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/hardes1/.gradle/caches/transforms-3/3ff4bb6b301c0665ef0d3e588ea342aa/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/hardes1/.gradle/caches/transforms-3/3ff4bb6b301c0665ef0d3e588ea342aa/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/hardes1/.gradle/caches/transforms-3/1a0136296b1ee8255593ffb497528cef/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
@@ -273,14 +273,14 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.0-alpha02] /home/har
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.0-alpha02] /home/hardes1/.gradle/caches/transforms-3/11d60f7d105b6e1e4d599be8bcb46158/transformed/lifecycle-livedata-core-2.5.0-alpha02/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/hardes1/.gradle/caches/transforms-3/8ab3578a91e7b4a6286391e1ddf5e863/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/hardes1/.gradle/caches/transforms-3/8ab3578a91e7b4a6286391e1ddf5e863/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/hardes1/.gradle/caches/transforms-3/ff28fe2184031e66b393d87570a9082e/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/hardes1/.gradle/caches/transforms-3/ff28fe2184031e66b393d87570a9082e/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/hardes1/.gradle/caches/transforms-3/363fa82df8bce17cc6d680daa7608ff4/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/hardes1/.gradle/caches/transforms-3/363fa82df8bce17cc6d680daa7608ff4/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/hardes1/.gradle/caches/transforms-3/e86e332b3e526453fdb1aa490915810a/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/hardes1/.gradle/caches/transforms-3/e86e332b3e526453fdb1aa490915810a/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /home/hardes1/.gradle/caches/transforms-3/5ce3150cdb5b95529aea8403ab28cf8d/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /home/hardes1/.gradle/caches/transforms-3/5ce3150cdb5b95529aea8403ab28cf8d/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/hardes1/.gradle/caches/transforms-3/ff28fe2184031e66b393d87570a9082e/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/hardes1/.gradle/caches/transforms-3/ff28fe2184031e66b393d87570a9082e/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.startup:startup-runtime:1.0.0] /home/hardes1/.gradle/caches/transforms-3/a4832152918c3cb7b58359fa25ca9e45/transformed/startup-runtime-1.0.0/AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.startup:startup-runtime:1.0.0] /home/hardes1/.gradle/caches/transforms-3/a4832152918c3cb7b58359fa25ca9e45/transformed/startup-runtime-1.0.0/AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.tracing:tracing:1.0.0] /home/hardes1/.gradle/caches/transforms-3/28b181562f31a4b8238a3d77ee1715e0/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41

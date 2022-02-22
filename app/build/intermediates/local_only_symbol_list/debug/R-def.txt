@@ -16,6 +16,7 @@ id name_textview
 id nav_host_fragment
 id nav_view
 id navgraph
+id patronymic_textview
 id recyclerview_rewards
 id reviewFragment
 id review_cardview
@@ -26,8 +27,8 @@ id statisticsFragment
 id surname_textview
 id swipe_refresh_layout
 layout activity_main
-layout fragment_review
 layout fragment_rewards
+layout fragment_staff
 layout fragment_statistics
 layout rewards_item
 layout staff_item
