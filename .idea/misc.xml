@@ -10,6 +10,12 @@
         <entry key="..\:/Users/ustin/AndroidStudioProjects/SoireeAndroid/app/src/main/res/layout/rewards_item.xml" value="0.264" />
         <entry key="..\:/Users/ustin/AndroidStudioProjects/SoireeAndroid/app/src/main/res/menu/drawer_menu.xml" value="0.2328125" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2815" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.271286231884058" />
+        <entry key="app/src/main/res/layout/fragment_review.xml" value="0.29598749348619074" />
+        <entry key="app/src/main/res/layout/fragment_rewards.xml" value="0.271286231884058" />
+        <entry key="app/src/main/res/layout/fragment_statistics.xml" value="0.271286231884058" />
+        <entry key="app/src/main/res/layout/rewards_item.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/staff_item.xml" value="0.25" />
       </map>
     </option>
   </component>

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:2:1-24:12
+ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:2:1-25:12
 MERGED from [androidx.databinding:databinding-adapters:7.1.1] /home/hardes1/.gradle/caches/transforms-3/d7ae86fd08ec054f0b9e194b8fc4645c/transformed/databinding-adapters-7.1.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-ktx:7.1.1] /home/hardes1/.gradle/caches/transforms-3/bf2c1bb024551de9ee29b596a8119871/transformed/databinding-ktx-7.1.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:7.1.1] /home/hardes1/.gradle/caches/transforms-3/3d840bf31f40bb09536a50bf37fc5530/transformed/databinding-runtime-7.1.1/AndroidManifest.xml:17:1-24:12
@@ -72,25 +72,29 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] /home/hardes1/.gradle/cac
 MERGED from [androidx.startup:startup-runtime:1.0.0] /home/hardes1/.gradle/caches/transforms-3/a4832152918c3cb7b58359fa25ca9e45/transformed/startup-runtime-1.0.0/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] /home/hardes1/.gradle/caches/transforms-3/28b181562f31a4b8238a3d77ee1715e0/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/hardes1/.gradle/caches/transforms-3/067752726e65ece705920bf0851a08da/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:2:1-25:12
 	package
 		ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:3:5-40
 		INJECTED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml
 		INJECTED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml
-		ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:2:1-24:12
+		ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:2:1-25:12
 		INJECTED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml
-		ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:2:1-24:12
+		ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:2:1-25:12
 		INJECTED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:4:22-64
 application
-ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:5:5-22:19
+ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:5:5-23:19
 MERGED from [androidx.window:window:1.0.0] /home/hardes1/.gradle/caches/transforms-3/93c864540c42240b0d48e30eec028c2c/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0] /home/hardes1/.gradle/caches/transforms-3/93c864540c42240b0d48e30eec028c2c/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
 MERGED from [com.google.android.material:material:1.5.0] /home/hardes1/.gradle/caches/transforms-3/0cb7621bab0bc344eec54c28a7c84ddf/transformed/material-1.5.0/AndroidManifest.xml:22:5-20
@@ -110,7 +114,7 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/hardes1/.gradle/c
 MERGED from [androidx.startup:startup-runtime:1.0.0] /home/hardes1/.gradle/caches/transforms-3/a4832152918c3cb7b58359fa25ca9e45/transformed/startup-runtime-1.0.0/AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.0.0] /home/hardes1/.gradle/caches/transforms-3/a4832152918c3cb7b58359fa25ca9e45/transformed/startup-runtime-1.0.0/AndroidManifest.xml:25:5-31:19
 	android:screenOrientation
-		ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:11:9-45
+		ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:12:9-45
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] /home/hardes1/.gradle/caches/transforms-3/a7abddef27dbbbb8f86ea02117ab2cf1/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
@@ -124,23 +128,25 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] /home/hardes1/.gradle/cache
 	android:allowBackup
 		ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:12:9-51
+		ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:13:9-51
+	android:usesCleartextTraffic
+		ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:11:9-44
 activity#com.example.myapplication.ui.MainActivity
-ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:13:9-21:20
+ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:14:9-22:20
 	android:exported
-		ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:15:13-36
+		ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:16:13-36
 	android:name
-		ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:14:13-44
+		ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:15:13-44
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:16:13-20:29
+ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:17:17-69
+ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:17:25-66
+		ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:19:17-77
+ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:19:27-74
+		ADDED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:20:27-74
 uses-sdk
 INJECTED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml

@@ -2914,6 +2914,8 @@ int id rectangles 0x7f080162
 int id recyclerview_rewards 0x7f080163
 int id reverseSawtooth 0x7f080164
 int id reviewFragment 0x7f080165
+int id review_cardview 0x7f0801f9
+int id review_recycler_view 0x7f0801fa
 int id rewardsFragment 0x7f080166
 int id rewards_cardview 0x7f080167
 int id right 0x7f080168
@@ -2988,6 +2990,7 @@ int id stretch 0x7f0801ac
 int id submenuarrow 0x7f0801ad
 int id submit_area 0x7f0801ae
 int id supportScrollUp 0x7f0801af
+int id surname_textview 0x7f0801fb
 int id tabMode 0x7f0801b0
 int id tag_accessibility_actions 0x7f0801b1
 int id tag_accessibility_clickable_spans 0x7f0801b2
@@ -3232,6 +3235,7 @@ int layout rewards_item 0x7f0b006d
 int layout select_dialog_item_material 0x7f0b006e
 int layout select_dialog_multichoice_material 0x7f0b006f
 int layout select_dialog_singlechoice_material 0x7f0b0070
+int layout staff_item 0x7f0b0081
 int layout support_simple_spinner_dropdown_item 0x7f0b0071
 int layout test_action_chip 0x7f0b0072
 int layout test_chip_zero_corner_radius 0x7f0b0073
