@@ -35,6 +35,7 @@ layout activity_main
 layout fragment_rewards
 layout fragment_staff
 layout fragment_statistics
+layout rating_item
 layout review_fragment
 layout review_item
 layout rewards_item

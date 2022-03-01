@@ -3240,6 +3240,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout rating_item
 layout review_fragment
 layout review_item
 layout rewards_item

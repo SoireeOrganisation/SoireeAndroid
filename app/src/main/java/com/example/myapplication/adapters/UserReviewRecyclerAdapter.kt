@@ -27,8 +27,8 @@ class UserReviewRecyclerAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.nameTextView.text = list[position].categoryName
-        holder.nameTextView.text =
+        holder.nameTextView.text = list[position].categoryName + ':'
+        holder.scoreTextView.text =
             context.resources.getString(R.string.average_mark, list[position].average)
     }
 

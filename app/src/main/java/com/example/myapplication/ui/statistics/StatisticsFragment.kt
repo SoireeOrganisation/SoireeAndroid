@@ -33,10 +33,11 @@ class StatisticsFragment : Fragment() {
         viewModel.reviewList.observe(viewLifecycleOwner) {
             binding.statisticsRecyclerView.adapter = UserReviewRecyclerAdapter(requireContext(), it)
         }
+        viewModel.getReviews()
         binding.swipeRefreshLayout.setOnRefreshListener {
             viewModel.getReviews()
         }
-        viewModel.getReviews()
+
     }
 
     override fun onDestroy() {

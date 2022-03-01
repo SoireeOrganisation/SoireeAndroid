@@ -33,7 +33,7 @@ class StatisticsViewModel : ViewModel() {
 
     fun getReviews() {
         viewModelScope.launch {
-            _refreshStatus.value = false
+            _refreshStatus.value = true
             try {
                 val rawData = Client.retrofitService.getReviews()
                 println(rawData.size)
@@ -42,7 +42,7 @@ class StatisticsViewModel : ViewModel() {
             } catch (e: Exception) {
                 Log.d(TAG, "${e.message}")
             } finally {
-                _refreshStatus.value = true
+                _refreshStatus.value = false
             }
         }
     }
