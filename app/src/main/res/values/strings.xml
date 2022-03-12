@@ -12,4 +12,6 @@
     <string name="normal_text">Normal</string>
     <string name="good_text">Good</string>
     <string name="excellent_text">Excellent</string>
+    <string name="submit_text">Submit</string>
+    <string name="not_all_fields_filled">You haven\'t filled all fields!</string>
 </resources>

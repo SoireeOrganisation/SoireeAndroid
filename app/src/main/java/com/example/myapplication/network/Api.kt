@@ -1,11 +1,11 @@
 package com.example.myapplication.network
 
-import com.example.myapplication.data.BonusData
-import com.example.myapplication.data.ReviewData
-import com.example.myapplication.data.StaffData
+import com.example.myapplication.data.*
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
+import retrofit2.http.Body
 import retrofit2.http.GET
+import retrofit2.http.POST
 import retrofit2.http.Query
 
 const val BASE_URL = "http://PaperFoldingSkill.pythonanywhere.com"
@@ -25,6 +25,12 @@ interface ApiService {
 
     @GET("api/reviews")
     suspend fun getReviews(@Query("key") key: String = DEBUG_KEY_REVIEW): List<ReviewData>
+
+    @GET("api/reviews/categories")
+    suspend fun getCategories(@Query("key") key: String = DEBUG_KEY_REVIEW): List<Category>
+
+    @POST("api/reviews")
+    suspend fun postMarks(@Body data : StaffRates)
 }
 
 

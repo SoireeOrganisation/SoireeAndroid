@@ -28,7 +28,7 @@
         android:id="@+id/rateFragment"
         android:name="com.example.myapplication.ui.review.ReviewFragment"
         android:label="@string/rate"
-        tools:layout="@layout/review_fragment" >
+        tools:layout="@layout/fragment_review" >
         <argument
             android:name="workerData"
             app:argType="com.example.myapplication.data.StaffData" />

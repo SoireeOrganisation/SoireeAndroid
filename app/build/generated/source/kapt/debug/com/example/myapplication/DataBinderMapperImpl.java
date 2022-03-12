@@ -7,6 +7,7 @@ import androidx.databinding.DataBinderMapper;
 import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
 import com.example.myapplication.databinding.ActivityMainBindingImpl;
+import com.example.myapplication.databinding.FragmentReviewBindingImpl;
 import com.example.myapplication.databinding.FragmentRewardsBindingImpl;
 import com.example.myapplication.databinding.FragmentStaffBindingImpl;
 import com.example.myapplication.databinding.FragmentStatisticsBindingImpl;
@@ -23,16 +24,19 @@ import java.util.List;
 public class DataBinderMapperImpl extends DataBinderMapper {
   private static final int LAYOUT_ACTIVITYMAIN = 1;
 
-  private static final int LAYOUT_FRAGMENTREWARDS = 2;
+  private static final int LAYOUT_FRAGMENTREVIEW = 2;
 
-  private static final int LAYOUT_FRAGMENTSTAFF = 3;
+  private static final int LAYOUT_FRAGMENTREWARDS = 3;
 
-  private static final int LAYOUT_FRAGMENTSTATISTICS = 4;
+  private static final int LAYOUT_FRAGMENTSTAFF = 4;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(4);
+  private static final int LAYOUT_FRAGMENTSTATISTICS = 5;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(5);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.myapplication.R.layout.activity_main, LAYOUT_ACTIVITYMAIN);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.myapplication.R.layout.fragment_review, LAYOUT_FRAGMENTREVIEW);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.myapplication.R.layout.fragment_rewards, LAYOUT_FRAGMENTREWARDS);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.myapplication.R.layout.fragment_staff, LAYOUT_FRAGMENTSTAFF);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.myapplication.R.layout.fragment_statistics, LAYOUT_FRAGMENTSTATISTICS);
@@ -52,6 +56,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new ActivityMainBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for activity_main is invalid. Received: " + tag);
+        }
+        case  LAYOUT_FRAGMENTREVIEW: {
+          if ("layout/fragment_review_0".equals(tag)) {
+            return new FragmentReviewBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for fragment_review is invalid. Received: " + tag);
         }
         case  LAYOUT_FRAGMENTREWARDS: {
           if ("layout/fragment_rewards_0".equals(tag)) {
@@ -124,10 +134,11 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(4);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(5);
 
     static {
       sKeys.put("layout/activity_main_0", com.example.myapplication.R.layout.activity_main);
+      sKeys.put("layout/fragment_review_0", com.example.myapplication.R.layout.fragment_review);
       sKeys.put("layout/fragment_rewards_0", com.example.myapplication.R.layout.fragment_rewards);
       sKeys.put("layout/fragment_staff_0", com.example.myapplication.R.layout.fragment_staff);
       sKeys.put("layout/fragment_statistics_0", com.example.myapplication.R.layout.fragment_statistics);

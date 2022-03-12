@@ -2665,6 +2665,7 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id buttonPanel
+id button_submit
 id cache_measures
 id callMeasure
 id cancel_action
@@ -2889,6 +2890,7 @@ id neverCompleteToStart
 id noScroll
 id noState
 id none
+id none_text
 id normal
 id normal_text
 id north
@@ -3008,6 +3010,7 @@ id supportScrollUp
 id surname_textview
 id swipe_refresh_layout
 id tabMode
+id table_layout
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
@@ -3183,6 +3186,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_review
 layout fragment_rewards
 layout fragment_staff
 layout fragment_statistics
@@ -3247,7 +3251,6 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
-layout review_fragment
 layout review_item
 layout rewards_item
 layout select_dialog_item_material
@@ -3410,6 +3413,7 @@ string mtrl_timepicker_confirm
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
 string normal_text
+string not_all_fields_filled
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -3422,6 +3426,7 @@ string rewards
 string search_menu_title
 string statistics
 string status_bar_notification_info_overflow
+string submit_text
 string your_points
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
