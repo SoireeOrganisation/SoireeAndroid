@@ -5,5 +5,11 @@
     <string name="statistics">Statistics</string>
     <string name="rewards">Rewards</string>
     <string name="your_points">Your points %s</string>
+    <string name="rate">Rate</string>
     <string name="average_mark">%.2f</string>
+    <string name="poor_text">Poor</string>
+    <string name="bad_text">Bad</string>
+    <string name="normal_text">Normal</string>
+    <string name="good_text">Good</string>
+    <string name="excellent_text">Excellent</string>
 </resources>

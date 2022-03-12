@@ -4,24 +4,7 @@
             "outputFile": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml",
             "map": [
                 {
-                    "source": "/home/hardes1/.gradle/caches/transforms-3/9130f71216a257b1715e3587c8eba995/transformed/navigation-ui-2.4.1/res/values-en-rAU/values-en-rAU.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,161",
-                        "endColumns": "105,116",
-                        "endOffsets": "156,273"
-                    },
-                    "to": {
-                        "startLines": "29,30",
-                        "startColumns": "4,4",
-                        "startOffsets": "2762,2868",
-                        "endColumns": "105,116",
-                        "endOffsets": "2863,2980"
-                    }
-                },
-                {
-                    "source": "/home/hardes1/.gradle/caches/transforms-3/79b56a615c6e6f881d627109e1ea61d2/transformed/appcompat-1.4.1/res/values-en-rAU/values-en-rAU.xml",
+                    "source": "/home/hardes1/.gradle/caches/transforms-3/17b498d7a37c0729dfcebfb899f4c7a9/transformed/appcompat-1.4.1/res/values-en-rAU/values-en-rAU.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "/home/hardes1/.gradle/caches/transforms-3/a7abddef27dbbbb8f86ea02117ab2cf1/transformed/core-1.7.0/res/values-en-rAU/values-en-rAU.xml",
+                    "source": "/home/hardes1/.gradle/caches/transforms-3/f32575264ccf9f8be149f6f776900bb6/transformed/navigation-ui-2.4.1/res/values-en-rAU/values-en-rAU.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,161",
+                        "endColumns": "105,116",
+                        "endOffsets": "156,273"
+                    },
+                    "to": {
+                        "startLines": "29,30",
+                        "startColumns": "4,4",
+                        "startOffsets": "2762,2868",
+                        "endColumns": "105,116",
+                        "endOffsets": "2863,2980"
+                    }
+                },
+                {
+                    "source": "/home/hardes1/.gradle/caches/transforms-3/c6132d13ba51881e6c31f804a8afe06c/transformed/core-1.7.0/res/values-en-rAU/values-en-rAU.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

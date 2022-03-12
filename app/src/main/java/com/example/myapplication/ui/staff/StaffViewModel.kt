@@ -8,6 +8,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.myapplication.data.StaffData
 import com.example.myapplication.network.Client
 import kotlinx.coroutines.launch
+import timber.log.Timber
 import java.lang.Exception
 
 const val TAG = "ReviewViewModel"
@@ -25,9 +26,9 @@ class ReviewViewModel : ViewModel() {
             _refreshStatus.value = true
             try {
                 _staffDataList.value = Client.retrofitService.getStaff()
-                Log.d(TAG, "${staffDataList.value?.size ?: -1}")
+                Timber.d("viewModelData: ${ _staffDataList.value!![0]}")
             } catch (e: Exception) {
-                Log.d(TAG, "downloadStaff: ${e.message}")
+                Timber.d("downloadStaff: ${e.message}")
             }
             finally {
                 _refreshStatus.value = false

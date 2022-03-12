@@ -4,18 +4,7 @@
             "outputFile": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/home/hardes1/.gradle/caches/transforms-3/79b56a615c6e6f881d627109e1ea61d2/transformed/appcompat-1.4.1/res/values-v23/values-v23.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,190,325,400,487,1371,2267,2386,2513,2735,2959,3074,3181,3294",
-                        "endLines": "2,3,4,5,19,33,34,35,38,42,43,44,45,49",
-                        "endColumns": "134,134,74,86,12,12,118,126,12,12,114,106,112,12",
-                        "endOffsets": "185,320,395,482,1366,2262,2381,2508,2730,2954,3069,3176,3289,3519"
-                    }
-                },
-                {
-                    "source": "/home/hardes1/.gradle/caches/transforms-3/87ff5ebfd8896bb4d85beeda9bc638ed/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",
+                    "source": "/home/hardes1/.gradle/caches/transforms-3/aaec7e029712fce0ba9ac4485c039f34/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -34,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/home/hardes1/.gradle/caches/transforms-3/0cb7621bab0bc344eec54c28a7c84ddf/transformed/material-1.5.0/res/values-v23/values-v23.xml",
+                    "source": "/home/hardes1/.gradle/caches/transforms-3/f025c181a58a3e5d6e8e1e6c42cbeb9f/transformed/material-1.5.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,5,8,13,17,20,23,26,31,34,38",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -50,6 +39,17 @@
                         "endLines": "55,58,63,67,70,73,76,81,84,88,92",
                         "endColumns": "10,10,10,10,10,10,10,10,10,10,10",
                         "endOffsets": "3885,4095,4415,4652,4859,5066,5269,5601,5803,6068,6341"
+                    }
+                },
+                {
+                    "source": "/home/hardes1/.gradle/caches/transforms-3/17b498d7a37c0729dfcebfb899f4c7a9/transformed/appcompat-1.4.1/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,190,325,400,487,1371,2267,2386,2513,2735,2959,3074,3181,3294",
+                        "endLines": "2,3,4,5,19,33,34,35,38,42,43,44,45,49",
+                        "endColumns": "134,134,74,86,12,12,118,126,12,12,114,106,112,12",
+                        "endOffsets": "185,320,395,482,1366,2262,2381,2508,2730,2954,3069,3176,3289,3519"
                     }
                 }
             ]
