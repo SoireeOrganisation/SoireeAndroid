@@ -29,6 +29,7 @@ id none_text
 id normal_text
 id patronymic_textview
 id poor_text
+id progress_bar
 id rateFragment
 id recyclerview_rewards
 id review_cardview
@@ -62,6 +63,8 @@ string hello_blank_fragment
 string normal_text
 string not_all_fields_filled
 string poor_text
+string post_failed
+string post_successful
 string rate
 string review
 string rewards

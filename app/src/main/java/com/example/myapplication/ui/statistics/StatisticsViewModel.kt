@@ -23,6 +23,10 @@ class StatisticsViewModel : ViewModel() {
     val refreshStatus: LiveData<Boolean>
         get() = _refreshStatus
 
+    var firstDownload = true
+        private set
+
+
     private fun convertToProcessedReviewData(list: List<ReviewData>): List<ProcessedReviewData> {
         return list.groupBy { it.category.id }.values.map {
             ProcessedReviewData(
@@ -32,16 +36,16 @@ class StatisticsViewModel : ViewModel() {
     }
 
     fun getReviews() {
+        firstDownload = false
         viewModelScope.launch {
             _refreshStatus.value = true
             try {
                 val rawData = Client.retrofitService.getReviews()
                 println(rawData.size)
                 _reviewList.value = convertToProcessedReviewData(rawData)
-                Log.d(TAG, "${_reviewList.value?.size ?: -1}")
             } catch (e: Exception) {
-                Log.d(TAG, "${e.message}")
-            } finally {
+                }
+            finally {
                 _refreshStatus.value = false
             }
         }

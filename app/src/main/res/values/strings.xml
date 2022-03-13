@@ -14,4 +14,6 @@
     <string name="excellent_text">Excellent</string>
     <string name="submit_text">Submit</string>
     <string name="not_all_fields_filled">You haven\'t filled all fields!</string>
+    <string name="post_failed">Error has happened during sending data to server. Try again</string>
+    <string name="post_successful">Your mark has been sent successful</string>
 </resources>

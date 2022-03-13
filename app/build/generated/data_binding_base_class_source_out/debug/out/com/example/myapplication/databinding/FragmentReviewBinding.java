@@ -4,6 +4,7 @@ package com.example.myapplication.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 import android.widget.TableLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -38,12 +39,15 @@ public abstract class FragmentReviewBinding extends ViewDataBinding {
   public final MaterialTextView poorText;
 
   @NonNull
+  public final ProgressBar progressBar;
+
+  @NonNull
   public final TableLayout tableLayout;
 
   protected FragmentReviewBinding(Object _bindingComponent, View _root, int _localFieldCount,
       MaterialTextView badText, MaterialButton buttonSubmit, MaterialTextView excellentText,
       MaterialTextView goodText, MaterialTextView noneText, MaterialTextView normalText,
-      MaterialTextView poorText, TableLayout tableLayout) {
+      MaterialTextView poorText, ProgressBar progressBar, TableLayout tableLayout) {
     super(_bindingComponent, _root, _localFieldCount);
     this.badText = badText;
     this.buttonSubmit = buttonSubmit;
@@ -52,6 +56,7 @@ public abstract class FragmentReviewBinding extends ViewDataBinding {
     this.noneText = noneText;
     this.normalText = normalText;
     this.poorText = poorText;
+    this.progressBar = progressBar;
     this.tableLayout = tableLayout;
   }
 

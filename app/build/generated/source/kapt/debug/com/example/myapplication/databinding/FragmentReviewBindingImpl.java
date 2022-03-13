@@ -22,6 +22,7 @@ public class FragmentReviewBindingImpl extends FragmentReviewBinding  {
         sViewsWithIds.put(R.id.good_text, 6);
         sViewsWithIds.put(R.id.excellent_text, 7);
         sViewsWithIds.put(R.id.button_submit, 8);
+        sViewsWithIds.put(R.id.progress_bar, 9);
     }
     // views
     @NonNull
@@ -32,7 +33,7 @@ public class FragmentReviewBindingImpl extends FragmentReviewBinding  {
     // Inverse Binding Event Handlers
 
     public FragmentReviewBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 9, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 10, sIncludes, sViewsWithIds));
     }
     private FragmentReviewBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
@@ -43,6 +44,7 @@ public class FragmentReviewBindingImpl extends FragmentReviewBinding  {
             , (com.google.android.material.textview.MaterialTextView) bindings[2]
             , (com.google.android.material.textview.MaterialTextView) bindings[5]
             , (com.google.android.material.textview.MaterialTextView) bindings[3]
+            , (android.widget.ProgressBar) bindings[9]
             , (android.widget.TableLayout) bindings[1]
             );
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];

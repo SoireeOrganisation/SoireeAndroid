@@ -10,6 +10,7 @@ import android.widget.CompoundButton
 import android.widget.TableRow
 import android.widget.Toast
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.myapplication.R
 import com.example.myapplication.data.Category
@@ -21,11 +22,11 @@ import timber.log.Timber
 class ReviewFragment : Fragment() {
 
 
-    private val viewModel: ReviewViewModel by viewModels()
     private var _binding: FragmentReviewBinding? = null
     private val binding: FragmentReviewBinding
         get() = _binding!!
     private val args: ReviewFragmentArgs by navArgs()
+    private val viewModel: ReviewViewModel by viewModels { ReviewViewModelFactory(args.workerData) }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -36,15 +37,39 @@ class ReviewFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         Timber.d("myData: ${args.workerData}")
         viewModel.categoriesList.observe(viewLifecycleOwner) {
             updateView(it)
         }
         viewModel.getCategories()
         binding.buttonSubmit.setOnClickListener {
-
+            getMarks()
         }
-        super.onViewCreated(view, savedInstanceState)
+        viewModel.responseState.observe(viewLifecycleOwner) {
+            binding.progressBar.visibility = View.INVISIBLE
+            when (it) {
+                ResponseState.ERROR -> Toast.makeText(
+                    requireContext(),
+                    resources.getString(R.string.post_failed),
+                    Toast.LENGTH_SHORT
+                ).show()
+                ResponseState.LOADING -> binding.progressBar.visibility = View.VISIBLE
+                ResponseState.SUCCESSFUL -> {
+                    val action =
+                        ReviewFragmentDirections.actionRateFragmentToStaffFragment(args.workerData.id)
+                    findNavController().navigate(action)
+                    Toast.makeText(
+                        requireContext(),
+                        resources.getString(R.string.post_successful),
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+                else -> {
+                    Timber.d("none")
+                }
+            }
+        }
     }
 
     private fun getMarks() {
@@ -77,14 +102,14 @@ class ReviewFragment : Fragment() {
         }
         categories.forEach {
             Timber.d("category: $it")
-            val tr: TableRow = TableRow(requireContext())
+            val tr = TableRow(requireContext())
             tr.id = View.generateViewId()
             tr.layoutParams = ViewGroup.LayoutParams(
                 TableRow.LayoutParams.MATCH_PARENT,
                 TableRow.LayoutParams.WRAP_CONTENT
             )
 
-            tr.addView(createTextView(it.name));
+            tr.addView(createTextView(it.name))
             for (i in 1 until 6) {
                 val child = MaterialRadioButton(requireContext())
                 child.gravity = Gravity.CENTER
@@ -115,8 +140,8 @@ class ReviewFragment : Fragment() {
 
 
     private fun createTextView(s: String): MaterialTextView {
-        val label = MaterialTextView(requireContext());
-        label.id = View.generateViewId();
+        val label = MaterialTextView(requireContext())
+        label.id = View.generateViewId()
         label.text = s
         val params = TableRow.LayoutParams(
             TableRow.LayoutParams.MATCH_PARENT,

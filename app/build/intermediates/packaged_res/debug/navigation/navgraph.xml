@@ -13,6 +13,10 @@
             android:id="@+id/action_reviewFragment_to_rateFragment"
             app:destination="@id/rateFragment"
             app:popUpTo="@id/staffFragment" />
+        <argument
+            android:name="removeId"
+            app:argType="integer"
+            android:defaultValue="-1" />
     </fragment>
     <fragment
         android:id="@+id/statisticsFragment"

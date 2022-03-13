@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.myapplication"
-        minSdk 23
+        minSdk 24
         targetSdk 31
         versionCode 1
         versionName "1.0"
@@ -67,4 +67,8 @@ dependencies {
 
     // timber
     implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    // progress bar
+    implementation 'com.mikhaellopez:circularprogressbar:3.1.0'
+
 }

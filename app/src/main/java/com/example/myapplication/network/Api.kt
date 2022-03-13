@@ -1,6 +1,7 @@
 package com.example.myapplication.network
 
 import com.example.myapplication.data.*
+import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.Body
@@ -30,7 +31,7 @@ interface ApiService {
     suspend fun getCategories(@Query("key") key: String = DEBUG_KEY_REVIEW): List<Category>
 
     @POST("api/reviews")
-    suspend fun postMarks(@Body data : StaffRates)
+    suspend fun postMarks(@Body data : StaffRates) : Response<String>
 }
 
 

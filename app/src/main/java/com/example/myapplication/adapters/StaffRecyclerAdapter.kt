@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
 import com.example.myapplication.data.StaffData
@@ -14,9 +15,10 @@ import com.google.android.material.textview.MaterialTextView
 import timber.log.Timber
 
 class StaffRecyclerAdapter(
-    private val staffList: List<StaffData>
 ) :
     RecyclerView.Adapter<StaffRecyclerAdapter.ReviewViewHolder>() {
+
+    private var oldStaffList: List<StaffData> = emptyList()
 
     class ReviewViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
 
@@ -32,15 +34,23 @@ class StaffRecyclerAdapter(
     }
 
     override fun onBindViewHolder(holder: ReviewViewHolder, position: Int) {
-        holder.name.text = staffList[position].name
-        holder.surname.text = staffList[position].surname
+        holder.name.text = oldStaffList[position].name
+        holder.surname.text = oldStaffList[position].surname
         holder.itemView.setOnClickListener {
             val action =
-                StaffFragmentDirections.actionReviewFragmentToRateFragment(workerData = staffList[position])
+                StaffFragmentDirections.actionReviewFragmentToRateFragment(workerData = oldStaffList[position])
             holder.view.findNavController().navigate(action)
         }
-        Timber.d("{myData ${staffList[position]}}")
+        Timber.d("{myData ${oldStaffList[position]}}")
     }
 
-    override fun getItemCount() = staffList.size
+    override fun getItemCount() = oldStaffList.size
+
+    fun setData(newStaffList: List<StaffData>) {
+        val diff = StaffDiffUtil(oldStaffList, newStaffList)
+        val diffResult = DiffUtil.calculateDiff(diff)
+
+        oldStaffList = newStaffList
+        diffResult.dispatchUpdatesTo(this)
+    }
 }

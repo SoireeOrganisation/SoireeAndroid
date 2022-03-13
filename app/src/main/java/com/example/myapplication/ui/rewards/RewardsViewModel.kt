@@ -7,8 +7,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.myapplication.data.BonusData
 import com.example.myapplication.network.Client
-import com.example.myapplication.ui.staff.TAG
 import kotlinx.coroutines.launch
+import timber.log.Timber
 import java.lang.Exception
 
 const val TAG = "RewardsViewModel"
@@ -21,12 +21,16 @@ class RewardsViewModel : ViewModel() {
     val refreshStatus: LiveData<Boolean>
         get() = _refreshStatus
 
+    var firstDownload = true
+        private set
+
     fun getBonuses() {
+        firstDownload = false
         viewModelScope.launch {
             _refreshStatus.value = true
             try {
                 _bonusesList.value = Client.retrofitService.getBonuses()
-                Log.d(TAG, "${_bonusesList.value?.size ?: -1}")
+                Timber.d("${_bonusesList.value?.size ?: -1}")
             } catch (e: Exception) {
             } finally {
                 _refreshStatus.value = false

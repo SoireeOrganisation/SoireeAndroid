@@ -39,10 +39,11 @@ class RewardsFragment : Fragment() {
         viewModel.refreshStatus.observe(viewLifecycleOwner) {
             binding.swipeRefreshLayout.isRefreshing = it
         }
-        viewModel.getBonuses()
         binding.swipeRefreshLayout.setOnRefreshListener {
             viewModel.getBonuses()
         }
+        if (viewModel.firstDownload)
+            viewModel.getBonuses()
     }
 
     override fun onDestroyView() {

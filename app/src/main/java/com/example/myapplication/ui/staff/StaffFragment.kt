@@ -6,8 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.navArgs
 import com.example.myapplication.adapters.StaffRecyclerAdapter
+import com.example.myapplication.data.CompanyData
+import com.example.myapplication.data.StaffData
 import com.example.myapplication.databinding.FragmentStaffBinding
+import com.example.myapplication.ui.review.ReviewFragmentArgs
+import timber.log.Timber
 
 class StaffFragment : Fragment() {
 
@@ -15,6 +20,10 @@ class StaffFragment : Fragment() {
     private var _binding: FragmentStaffBinding? = null
     private val binding: FragmentStaffBinding
         get() = _binding!!
+    private val staffAdapter : StaffRecyclerAdapter by lazy {
+        StaffRecyclerAdapter()
+    }
+    private val args : StaffFragmentArgs by navArgs()
 
 
     override fun onCreateView(
@@ -27,15 +36,21 @@ class StaffFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.reviewRecyclerView.adapter = staffAdapter
         viewModel.staffDataList.observe(viewLifecycleOwner) {
-            binding.reviewRecyclerView.adapter = StaffRecyclerAdapter(it)
+            staffAdapter.setData(it)
         }
         viewModel.refreshStatus.observe(viewLifecycleOwner) {
             binding.swipeRefreshLayout.isRefreshing = it
         }
-        viewModel.downloadStaff()
         binding.swipeRefreshLayout.setOnRefreshListener {
             viewModel.downloadStaff()
+        }
+        if (viewModel.firstDownload) {
+            viewModel.downloadStaff()
+        }
+        if(args.removeId != -1){
+            viewModel.removeWithId(args.removeId)
         }
     }
 
