@@ -3,12 +3,17 @@ package com.example.myapplication.ui.rewards
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.NavigationUI
+import com.example.myapplication.R
 import com.example.myapplication.adapters.RewardsRecyclerAdapter
 import com.example.myapplication.data.BonusData
 import com.example.myapplication.databinding.FragmentRewardsBinding
+import timber.log.Timber
 import kotlin.random.Random
 
 
@@ -23,7 +28,8 @@ class RewardsFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
+        setHasOptionsMenu(true)
         _binding = FragmentRewardsBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -51,12 +57,18 @@ class RewardsFragment : Fragment() {
         _binding = null
     }
 
-    private fun generateData(size: Int): List<BonusData> {
-        val rnd = Random(1337)
-        val list: MutableList<BonusData> = mutableListOf()
-        for (i in 0 until size) {
-            list.add(BonusData(rnd.nextInt(size), rnd.nextInt().toString()))
+
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.refresh -> {
+                Timber.d("fragment refreshed")
+                viewModel.getBonuses()
+            }
         }
-        return list.toList()
+        return NavigationUI.onNavDestinationSelected(
+            item,
+            findNavController()
+        ) || super.onOptionsItemSelected(item)
     }
 }

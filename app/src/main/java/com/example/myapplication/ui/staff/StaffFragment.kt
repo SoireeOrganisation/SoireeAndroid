@@ -3,10 +3,14 @@ package com.example.myapplication.ui.staff
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import androidx.navigation.ui.NavigationUI
+import com.example.myapplication.R
 import com.example.myapplication.adapters.StaffRecyclerAdapter
 import com.example.myapplication.data.CompanyData
 import com.example.myapplication.data.StaffData
@@ -29,7 +33,8 @@ class StaffFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
+        setHasOptionsMenu(true)
         _binding = FragmentStaffBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -59,5 +64,18 @@ class StaffFragment : Fragment() {
         _binding = null
     }
 
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.refresh -> {
+                Timber.d("fragment refreshed")
+                viewModel.downloadStaff()
+            }
+        }
+        return NavigationUI.onNavDestinationSelected(
+            item,
+            findNavController()
+        ) || super.onOptionsItemSelected(item)
+    }
 
 }

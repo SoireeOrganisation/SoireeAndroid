@@ -20,5 +20,9 @@
     <string name="button_login_text">Login</string>
     <string name="password_hint_text">password</string>
     <string name="login_hint_text">login</string>
-
+    <string name="auth_failed">Authorization failed</string>
+    <string name="auth_successful">Authorization successful</string>
+    <string name="auth_error">Internet connection error</string>
+    <string name="refresh_options_menu_text">Refresh</string>
+    <string name="exit_options_menu_text">Exit</string>
 </resources>

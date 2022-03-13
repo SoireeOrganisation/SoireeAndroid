@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.myapplication.data.StaffData
 import com.example.myapplication.network.Client
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import timber.log.Timber
 import java.lang.Exception
@@ -28,8 +29,10 @@ class ReviewViewModel : ViewModel() {
     }
 
     fun downloadStaff() {
-        firstDownload = false
         viewModelScope.launch {
+            if(firstDownload)
+                delay(1)
+            firstDownload = false
             _refreshStatus.value = true
             try {
                 _staffDataList.value = Client.retrofitService.getStaff().toMutableList()

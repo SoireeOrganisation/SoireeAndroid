@@ -36,6 +36,7 @@ class StaffRecyclerAdapter(
     override fun onBindViewHolder(holder: ReviewViewHolder, position: Int) {
         holder.name.text = oldStaffList[position].name
         holder.surname.text = oldStaffList[position].surname
+        Timber.d("oldStaff: $oldStaffList")
         holder.itemView.setOnClickListener {
             val action =
                 StaffFragmentDirections.actionReviewFragmentToRateFragment(workerData = oldStaffList[position])

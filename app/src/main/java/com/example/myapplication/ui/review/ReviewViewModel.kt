@@ -10,18 +10,14 @@ import com.example.myapplication.data.StaffData
 import com.example.myapplication.data.StaffRates
 import com.example.myapplication.network.Client
 import com.example.myapplication.network.DEBUG_KEY
+import com.example.myapplication.network.ResponseState
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
 import kotlinx.coroutines.launch
 import timber.log.Timber
 
 
-enum class ResponseState {
-    SUCCESSFUL,
-    LOADING,
-    ERROR,
-    NONE
-}
+
 
 
 class ReviewViewModel(val staffData: StaffData) : ViewModel() {
@@ -52,7 +48,6 @@ class ReviewViewModel(val staffData: StaffData) : ViewModel() {
         viewModelScope.launch {
             Timber.d("posting marks...")
             try {
-
                 val marksList = mutableListOf<Rate>()
                 for (i in rawRates.indices) {
                     marksList.add(Rate(categoriesList.value!![i].id, "none", 2 * rawRates[i]))
@@ -64,7 +59,6 @@ class ReviewViewModel(val staffData: StaffData) : ViewModel() {
                     moshi.adapter(StaffRates::class.java)
 
                 val json = jsonAdapter.toJson(data)
-
                 Timber.d("Json data: $json")
 
                 Timber.d("Raw review: $data")

@@ -2773,6 +2773,7 @@ id end_padder
 id enterAlways
 id enterAlwaysCollapsed
 id excellent_text
+id exit
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -2956,6 +2957,7 @@ id rateFragment
 id ratio
 id rectangles
 id recyclerview_rewards
+id refresh
 id reverseSawtooth
 id review_cardview
 id review_recycler_view
@@ -3204,6 +3206,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_login
 layout activity_main
+layout activity_splash
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3310,6 +3313,7 @@ layout text_view_without_line_height
 menu drawer_menu
 menu example_menu
 menu example_menu2
+menu options_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation navgraph
@@ -3344,6 +3348,9 @@ string abc_toolbar_collapse_description
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
+string auth_error
+string auth_failed
+string auth_successful
 string average_mark
 string bad_text
 string bottom_sheet_behavior
@@ -3356,6 +3363,7 @@ string chip_text
 string clear_text_end_icon_content_description
 string error_icon_content_description
 string excellent_text
+string exit_options_menu_text
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
@@ -3460,6 +3468,7 @@ string poor_text
 string post_failed
 string post_successful
 string rate
+string refresh_options_menu_text
 string review
 string rewards
 string search_menu_title

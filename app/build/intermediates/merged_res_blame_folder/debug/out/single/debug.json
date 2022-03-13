@@ -4,6 +4,10 @@
         "source": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/res/mipmap-xhdpi/ic_launcher.webp"
     },
     {
+        "merged": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/build/intermediates/merged_res/debug/menu_options_menu.xml.flat",
+        "source": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/res/menu/options_menu.xml"
+    },
+    {
         "merged": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/build/intermediates/merged_res/debug/layout_fragment_statistics.xml.flat",
         "source": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/res/layout/fragment_statistics.xml"
     },
@@ -38,6 +42,10 @@
     {
         "merged": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/build/intermediates/merged_res/debug/layout_activity_splash.xml.flat",
+        "source": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/res/layout/activity_splash.xml"
     },
     {
         "merged": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.webp.flat",

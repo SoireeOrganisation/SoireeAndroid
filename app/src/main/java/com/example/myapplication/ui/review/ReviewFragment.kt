@@ -1,20 +1,19 @@
 package com.example.myapplication.ui.review
 
 import android.os.Bundle
-import android.view.Gravity
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import android.widget.CompoundButton
 import android.widget.TableRow
 import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import androidx.navigation.ui.NavigationUI
 import com.example.myapplication.R
 import com.example.myapplication.data.Category
 import com.example.myapplication.databinding.FragmentReviewBinding
+import com.example.myapplication.network.ResponseState
 import com.google.android.material.radiobutton.MaterialRadioButton
 import com.google.android.material.textview.MaterialTextView
 import timber.log.Timber
@@ -32,6 +31,7 @@ class ReviewFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        setHasOptionsMenu(true)
         _binding = FragmentReviewBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -151,6 +151,8 @@ class ReviewFragment : Fragment() {
         label.layoutParams = params
         return label
     }
+
+
 
 }
 

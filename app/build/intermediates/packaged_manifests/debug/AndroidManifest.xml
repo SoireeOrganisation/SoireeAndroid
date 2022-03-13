@@ -25,9 +25,8 @@
         android:theme="@style/Theme.MyApplication"
         android:usesCleartextTraffic="true" >
         <activity
-            android:name="com.example.myapplication.ui.activities.login.LoginActivity"
-            android:exported="true"
-            android:label="@string/title_activity_login" >
+            android:name="com.example.myapplication.ui.activities.splash.SplashActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -35,9 +34,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.myapplication.ui.activities.main.MainActivity"
-            android:exported="false" >
+            android:name="com.example.myapplication.ui.activities.login.LoginActivity"
+            android:exported="false"
+            android:label="@string/title_activity_login" >
         </activity>
+        <activity
+            android:name="com.example.myapplication.ui.activities.main.MainActivity"
+            android:exported="false" />
 
         <uses-library
             android:name="androidx.window.extensions"

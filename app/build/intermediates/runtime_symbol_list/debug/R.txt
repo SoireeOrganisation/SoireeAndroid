@@ -2772,6 +2772,7 @@ int id end_padder 0x7f0800bc
 int id enterAlways 0x7f0800bd
 int id enterAlwaysCollapsed 0x7f0800be
 int id excellent_text 0x7f0800bf
+int id exit 0x7f080217
 int id exitUntilCollapsed 0x7f0800c0
 int id expand_activities_button 0x7f0800c1
 int id expanded_menu 0x7f0800c2
@@ -2955,6 +2956,7 @@ int id rateFragment 0x7f080173
 int id ratio 0x7f080174
 int id rectangles 0x7f080175
 int id recyclerview_rewards 0x7f080176
+int id refresh 0x7f080218
 int id reverseSawtooth 0x7f080177
 int id review_cardview 0x7f080178
 int id review_recycler_view 0x7f080179
@@ -3203,6 +3205,7 @@ int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_login 0x7f0b001c
 int layout activity_main 0x7f0b001d
+int layout activity_splash 0x7f0b0085
 int layout custom_dialog 0x7f0b001e
 int layout design_bottom_navigation_item 0x7f0b001f
 int layout design_bottom_sheet_dialog 0x7f0b0020
@@ -3309,6 +3312,7 @@ int layout text_view_without_line_height 0x7f0b0084
 int menu drawer_menu 0x7f0c0000
 int menu example_menu 0x7f0c0001
 int menu example_menu2 0x7f0c0002
+int menu options_menu 0x7f0c0003
 int mipmap ic_launcher 0x7f0d0000
 int mipmap ic_launcher_round 0x7f0d0001
 int navigation navgraph 0x7f0e0000
@@ -3343,6 +3347,9 @@ int string abc_toolbar_collapse_description 0x7f10001a
 int string androidx_startup 0x7f10001b
 int string app_name 0x7f10001c
 int string appbar_scrolling_view_behavior 0x7f10001d
+int string auth_error 0x7f10009a
+int string auth_failed 0x7f10009b
+int string auth_successful 0x7f10009c
 int string average_mark 0x7f10001e
 int string bad_text 0x7f10001f
 int string bottom_sheet_behavior 0x7f100020
@@ -3355,6 +3362,7 @@ int string chip_text 0x7f100026
 int string clear_text_end_icon_content_description 0x7f100027
 int string error_icon_content_description 0x7f100028
 int string excellent_text 0x7f100029
+int string exit_options_menu_text 0x7f10009d
 int string exposed_dropdown_menu_content_description 0x7f10002a
 int string fab_transformation_scrim_behavior 0x7f10002b
 int string fab_transformation_sheet_behavior 0x7f10002c
@@ -3459,6 +3467,7 @@ int string poor_text 0x7f10008e
 int string post_failed 0x7f10008f
 int string post_successful 0x7f100090
 int string rate 0x7f100091
+int string refresh_options_menu_text 0x7f10009e
 int string review 0x7f100092
 int string rewards 0x7f100093
 int string search_menu_title 0x7f100094

@@ -4,6 +4,10 @@
         "source": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/res/layout/activity_login.xml"
     },
     {
+        "merged": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_splash.xml",
+        "source": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/res/layout/activity_splash.xml"
+    },
+    {
         "merged": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_statistics.xml",
         "source": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/res/layout/fragment_statistics.xml"
     },

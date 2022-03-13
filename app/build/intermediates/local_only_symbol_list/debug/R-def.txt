@@ -23,6 +23,7 @@ id category_name_textview
 id container
 id drawer_layout
 id excellent_text
+id exit
 id good_text
 id loading
 id login
@@ -40,6 +41,7 @@ id poor_text
 id progress_bar
 id rateFragment
 id recyclerview_rewards
+id refresh
 id review_cardview
 id review_recycler_view
 id rewardsFragment
@@ -53,6 +55,7 @@ id table_layout
 id username
 layout activity_login
 layout activity_main
+layout activity_splash
 layout fragment_review
 layout fragment_rewards
 layout fragment_staff
@@ -61,14 +64,19 @@ layout review_item
 layout rewards_item
 layout staff_item
 menu drawer_menu
+menu options_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation navgraph
 string app_name
+string auth_error
+string auth_failed
+string auth_successful
 string average_mark
 string bad_text
 string button_login_text
 string excellent_text
+string exit_options_menu_text
 string good_text
 string hello_blank_fragment
 string login_hint_text
@@ -79,6 +87,7 @@ string poor_text
 string post_failed
 string post_successful
 string rate
+string refresh_options_menu_text
 string review
 string rewards
 string statistics
