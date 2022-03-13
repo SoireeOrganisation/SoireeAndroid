@@ -8,9 +8,11 @@ import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.POST
 import retrofit2.http.Query
+import java.security.MessageDigest
 
 const val BASE_URL = "http://PaperFoldingSkill.pythonanywhere.com"
-const val DEBUG_KEY = "40c43c2fec798fa2216be854101756ae"
+var DEBUG_KEY = ""
+    private set
 const val DEBUG_KEY_REVIEW = "9b9998f9c8abc6961a0bdb834471fe4a"
 val retrofit: Retrofit =
     Retrofit.Builder().addConverterFactory(MoshiConverterFactory.create()).baseUrl(
@@ -25,18 +27,35 @@ interface ApiService {
     suspend fun getBonuses(@Query("key") key: String = DEBUG_KEY): List<BonusData>
 
     @GET("api/reviews")
-    suspend fun getReviews(@Query("key") key: String = DEBUG_KEY_REVIEW): List<ReviewData>
+    suspend fun getReviews(@Query("key") key: String = DEBUG_KEY): List<ReviewData> // was review
 
     @GET("api/reviews/categories")
-    suspend fun getCategories(@Query("key") key: String = DEBUG_KEY_REVIEW): List<Category>
+    suspend fun getCategories(@Query("key") key: String = DEBUG_KEY): List<Category> // was review
 
     @POST("api/reviews")
-    suspend fun postMarks(@Body data : StaffRates) : Response<String>
+    suspend fun postMarks(@Body data: StaffRates): Response<String>
+
+    @POST("api/login")
+    suspend fun tryLogin(@Body data: LoginData) : Response<String>
 }
 
 
 object Client {
+    fun setKey(preview: String) {
+        if (DEBUG_KEY.isNotEmpty())
+            return
+        DEBUG_KEY = md5(preview).toHex()
+    }
+
+    private fun ByteArray.toHex() = joinToString(separator = "") { byte -> "%02x".format(byte) }
+
+    private fun md5(str: String): ByteArray =
+        MessageDigest.getInstance("MD5").digest(str.toByteArray(Charsets.UTF_8))
+
+    fun getHash(preview: String): String = md5(preview).toHex()
+
     val retrofitService: ApiService by lazy {
+
         retrofit.create(ApiService::class.java)
     }
 }

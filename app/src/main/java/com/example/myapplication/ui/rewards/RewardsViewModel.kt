@@ -1,6 +1,5 @@
 package com.example.myapplication.ui.rewards
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -11,7 +10,6 @@ import kotlinx.coroutines.launch
 import timber.log.Timber
 import java.lang.Exception
 
-const val TAG = "RewardsViewModel"
 
 class RewardsViewModel : ViewModel() {
     private val _bonusesList: MutableLiveData<List<BonusData>> = MutableLiveData(mutableListOf())

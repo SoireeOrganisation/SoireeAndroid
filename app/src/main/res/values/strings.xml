@@ -16,4 +16,9 @@
     <string name="not_all_fields_filled">You haven\'t filled all fields!</string>
     <string name="post_failed">Error has happened during sending data to server. Try again</string>
     <string name="post_successful">Your mark has been sent successful</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="button_login_text">Login</string>
+    <string name="password_hint_text">password</string>
+    <string name="login_hint_text">login</string>
+
 </resources>
