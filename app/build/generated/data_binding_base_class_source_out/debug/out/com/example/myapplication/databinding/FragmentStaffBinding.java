@@ -11,6 +11,7 @@ import androidx.databinding.ViewDataBinding;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.example.myapplication.R;
+import com.google.android.material.textview.MaterialTextView;
 import java.lang.Deprecated;
 import java.lang.Object;
 
@@ -19,12 +20,17 @@ public abstract class FragmentStaffBinding extends ViewDataBinding {
   public final RecyclerView reviewRecyclerView;
 
   @NonNull
+  public final MaterialTextView statusTextView;
+
+  @NonNull
   public final SwipeRefreshLayout swipeRefreshLayout;
 
   protected FragmentStaffBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      RecyclerView reviewRecyclerView, SwipeRefreshLayout swipeRefreshLayout) {
+      RecyclerView reviewRecyclerView, MaterialTextView statusTextView,
+      SwipeRefreshLayout swipeRefreshLayout) {
     super(_bindingComponent, _root, _localFieldCount);
     this.reviewRecyclerView = reviewRecyclerView;
+    this.statusTextView = statusTextView;
     this.swipeRefreshLayout = swipeRefreshLayout;
   }
 

@@ -49,6 +49,7 @@ id rewards_cardview
 id staffFragment
 id statisticsFragment
 id statistics_recyclerView
+id status_text_view
 id surname_textview
 id swipe_refresh_layout
 id table_layout
@@ -87,10 +88,14 @@ string poor_text
 string post_failed
 string post_successful
 string rate
+string refresh_error
 string refresh_options_menu_text
 string review
 string rewards
+string rewards_empty
+string staff_done_empty
 string statistics
+string statistics_empty
 string submit_text
 string title_activity_login
 string your_points

@@ -11,6 +11,7 @@ import androidx.databinding.ViewDataBinding;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.example.myapplication.R;
+import com.google.android.material.textview.MaterialTextView;
 import java.lang.Deprecated;
 import java.lang.Object;
 
@@ -19,12 +20,17 @@ public abstract class FragmentRewardsBinding extends ViewDataBinding {
   public final RecyclerView recyclerviewRewards;
 
   @NonNull
+  public final MaterialTextView statusTextView;
+
+  @NonNull
   public final SwipeRefreshLayout swipeRefreshLayout;
 
   protected FragmentRewardsBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      RecyclerView recyclerviewRewards, SwipeRefreshLayout swipeRefreshLayout) {
+      RecyclerView recyclerviewRewards, MaterialTextView statusTextView,
+      SwipeRefreshLayout swipeRefreshLayout) {
     super(_bindingComponent, _root, _localFieldCount);
     this.recyclerviewRewards = recyclerviewRewards;
+    this.statusTextView = statusTextView;
     this.swipeRefreshLayout = swipeRefreshLayout;
   }
 

@@ -3033,6 +3033,7 @@ id staticPostLayout
 id statisticsFragment
 id statistics_recyclerView
 id status_bar_latest_event_content
+id status_text_view
 id stop
 id stretch
 id submenuarrow
@@ -3468,11 +3469,15 @@ string poor_text
 string post_failed
 string post_successful
 string rate
+string refresh_error
 string refresh_options_menu_text
 string review
 string rewards
+string rewards_empty
 string search_menu_title
+string staff_done_empty
 string statistics
+string statistics_empty
 string status_bar_notification_info_overflow
 string submit_text
 string title_activity_login

@@ -26,7 +26,8 @@
         android:usesCleartextTraffic="true" >
         <activity
             android:name="com.example.myapplication.ui.activities.splash.SplashActivity"
-            android:exported="true" >
+            android:exported="true"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,11 +37,13 @@
         <activity
             android:name="com.example.myapplication.ui.activities.login.LoginActivity"
             android:exported="false"
-            android:label="@string/title_activity_login" >
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.myapplication.ui.activities.main.MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
 
         <uses-library
             android:name="androidx.window.extensions"

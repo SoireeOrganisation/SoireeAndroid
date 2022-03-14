@@ -11,6 +11,7 @@ import androidx.databinding.ViewDataBinding;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.example.myapplication.R;
+import com.google.android.material.textview.MaterialTextView;
 import java.lang.Deprecated;
 import java.lang.Object;
 
@@ -19,12 +20,17 @@ public abstract class FragmentStatisticsBinding extends ViewDataBinding {
   public final RecyclerView statisticsRecyclerView;
 
   @NonNull
+  public final MaterialTextView statusTextView;
+
+  @NonNull
   public final SwipeRefreshLayout swipeRefreshLayout;
 
   protected FragmentStatisticsBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      RecyclerView statisticsRecyclerView, SwipeRefreshLayout swipeRefreshLayout) {
+      RecyclerView statisticsRecyclerView, MaterialTextView statusTextView,
+      SwipeRefreshLayout swipeRefreshLayout) {
     super(_bindingComponent, _root, _localFieldCount);
     this.statisticsRecyclerView = statisticsRecyclerView;
+    this.statusTextView = statusTextView;
     this.swipeRefreshLayout = swipeRefreshLayout;
   }
 
