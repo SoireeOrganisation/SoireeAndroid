@@ -11,6 +11,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.navigation.ui.NavigationUI
 import com.example.myapplication.R
+import com.example.myapplication.adapters.itemDecorators.MarginItemDecoration
 import com.example.myapplication.adapters.staffAdapter.StaffRecyclerAdapter
 import com.example.myapplication.databinding.FragmentStaffBinding
 import com.example.myapplication.network.DataResponseState
@@ -40,6 +41,13 @@ class StaffFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.reviewRecyclerView.adapter = staffAdapter
+        binding.reviewRecyclerView.addItemDecoration(
+            MarginItemDecoration(
+                resources.getDimensionPixelSize(
+                    R.dimen.cardview_margin
+                )
+            )
+        )
         viewModel.staffDataList.observe(viewLifecycleOwner) {
             staffAdapter.setData(it)
         }

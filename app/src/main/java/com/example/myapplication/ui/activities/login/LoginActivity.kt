@@ -28,14 +28,17 @@ class LoginActivity : AppCompatActivity() {
 
         val username = binding.username
         val password = binding.password
-        val login = binding.login
+        val login = binding.loginButton
         val loading = binding.loading
 
+
         username.addTextChangedListener {
-            login.isEnabled = !(username.text.isNullOrEmpty() || password.text.isNullOrEmpty())
+            val flag = !(username.text.isNullOrEmpty() || password.text.isNullOrEmpty())
+            login.isEnabled = flag
         }
         password.addTextChangedListener {
-            login.isEnabled = !(username.text.isNullOrEmpty() || password.text.isNullOrEmpty())
+            val flag = !(username.text.isNullOrEmpty() || password.text.isNullOrEmpty())
+            login.isEnabled = flag
         }
 
         viewModel.responseState.observe(this) {

@@ -28,12 +28,14 @@ class UserReviewRecyclerAdapter(
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val root = LayoutInflater.from(parent.context).inflate(R.layout.review_item, parent, false)
+        val root =
+            LayoutInflater.from(parent.context).inflate(R.layout.statistics_item, parent, false)
         return ViewHolder(root)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.nameTextView.text = oldList[position].categoryName + ':'
+        holder.nameTextView.text =
+            context.resources.getString(R.string.category_name, oldList[position].categoryName)
         holder.scoreTextView.text =
             context.resources.getString(R.string.average_mark, oldList[position].average)
     }

@@ -46,12 +46,18 @@ object Client {
         DEBUG_KEY = preview
     }
 
+    fun resetKey(){
+        DEBUG_KEY = ""
+    }
+
     private fun ByteArray.toHex() = joinToString(separator = "") { byte -> "%02x".format(byte) }
 
     private fun md5(str: String): ByteArray =
         MessageDigest.getInstance("MD5").digest(str.toByteArray(Charsets.UTF_8))
 
     fun getHash(preview: String): String = md5(preview).toHex()
+
+
 
     val retrofitService: ApiService by lazy {
 

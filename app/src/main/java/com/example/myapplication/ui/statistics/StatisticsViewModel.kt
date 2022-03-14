@@ -9,6 +9,7 @@ import com.example.myapplication.data.ReviewData
 import com.example.myapplication.network.Client
 import com.example.myapplication.network.DataResponseState
 import kotlinx.coroutines.launch
+import timber.log.Timber
 import java.lang.Exception
 
 
@@ -47,6 +48,7 @@ class StatisticsViewModel : ViewModel() {
                 else
                     _responseStatus.value = DataResponseState.FULL
             } catch (e: Exception) {
+                Timber.d("Error while debug: $e")
                 _responseStatus.value = DataResponseState.ERROR
             }
         }

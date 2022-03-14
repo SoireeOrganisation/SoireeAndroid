@@ -17,6 +17,7 @@ class MainViewModel : ViewModel() {
     fun restoreClient(context: Context) {
         val pref = context.getSharedPreferences(Storage.STORAGE_KEY, Context.MODE_PRIVATE)
         val editor = pref.edit()
+        Client.resetKey()
         editor.putString(Storage.VALUE_KEY, null)
         editor.apply()
     }

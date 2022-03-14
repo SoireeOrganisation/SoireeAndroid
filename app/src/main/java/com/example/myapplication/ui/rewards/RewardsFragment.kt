@@ -9,7 +9,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
+import androidx.recyclerview.widget.GridLayoutManager
 import com.example.myapplication.R
+import com.example.myapplication.adapters.itemDecorators.GridMarginItemDecoration
 import com.example.myapplication.adapters.rewardsAdapter.RewardsRecyclerAdapter
 import com.example.myapplication.databinding.FragmentRewardsBinding
 import com.example.myapplication.network.DataResponseState
@@ -23,8 +25,8 @@ class RewardsFragment : Fragment() {
     private val binding: FragmentRewardsBinding
         get() = _binding!!
     private val viewModel: RewardsViewModel by activityViewModels()
-    private val adapter : RewardsRecyclerAdapter by lazy {
-        RewardsRecyclerAdapter()
+    private val adapter: RewardsRecyclerAdapter by lazy {
+        RewardsRecyclerAdapter(requireContext())
     }
 
 
@@ -40,10 +42,16 @@ class RewardsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.recyclerviewRewards.adapter = adapter
+        binding.recyclerviewRewards.addItemDecoration(
+            GridMarginItemDecoration(
+                resources.getDimensionPixelSize(
+                    R.dimen.cardview_margin
+                ), 2
+            )
+        )
         viewModel.bonusesList.observe(viewLifecycleOwner) {
             adapter.setData(it)
         }
-
         viewModel.responseStatus.observe(viewLifecycleOwner) {
             when (it) {
                 DataResponseState.LOADING -> {
@@ -86,7 +94,6 @@ class RewardsFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-
 
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

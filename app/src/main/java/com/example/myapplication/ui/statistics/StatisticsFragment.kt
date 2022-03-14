@@ -10,6 +10,7 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.example.myapplication.R
+import com.example.myapplication.adapters.itemDecorators.MarginItemDecoration
 import com.example.myapplication.adapters.userAdapter.UserReviewRecyclerAdapter
 import com.example.myapplication.databinding.FragmentStatisticsBinding
 import com.example.myapplication.network.DataResponseState
@@ -39,6 +40,13 @@ class StatisticsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.statisticsRecyclerView.adapter = adapter
+        binding.statisticsRecyclerView.addItemDecoration(
+            MarginItemDecoration(
+                resources.getDimensionPixelSize(
+                    R.dimen.cardview_margin
+                )
+            )
+        )
         viewModel.responseStatus.observe(viewLifecycleOwner) {
             when (it) {
                 DataResponseState.LOADING -> {

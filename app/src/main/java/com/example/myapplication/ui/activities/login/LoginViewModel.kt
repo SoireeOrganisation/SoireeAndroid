@@ -41,5 +41,7 @@ class LoginViewModel : ViewModel() {
         val editor = pref.edit()
         editor.putString(Storage.VALUE_KEY, Client.getHash(hashed))
         editor.apply()
+        Timber.d("result of Hash: ${pref.getString(Storage.VALUE_KEY, "nope")}")
+        Timber.d("api key: ")
     }
 }

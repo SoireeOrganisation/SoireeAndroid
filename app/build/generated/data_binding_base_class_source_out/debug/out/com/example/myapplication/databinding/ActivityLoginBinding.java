@@ -4,7 +4,6 @@ package com.example.myapplication.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,8 +11,10 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.myapplication.R;
+import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.android.material.textview.MaterialTextView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -26,10 +27,13 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final ConstraintLayout container;
 
   @NonNull
+  public final MaterialTextView introTextview;
+
+  @NonNull
   public final ProgressBar loading;
 
   @NonNull
-  public final Button login;
+  public final MaterialButton loginButton;
 
   @NonNull
   public final TextInputLayout loginInputLayout;
@@ -44,13 +48,15 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final TextInputEditText username;
 
   private ActivityLoginBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout container, @NonNull ProgressBar loading, @NonNull Button login,
+      @NonNull ConstraintLayout container, @NonNull MaterialTextView introTextview,
+      @NonNull ProgressBar loading, @NonNull MaterialButton loginButton,
       @NonNull TextInputLayout loginInputLayout, @NonNull TextInputEditText password,
       @NonNull TextInputLayout passwordInputLayout, @NonNull TextInputEditText username) {
     this.rootView = rootView;
     this.container = container;
+    this.introTextview = introTextview;
     this.loading = loading;
-    this.login = login;
+    this.loginButton = loginButton;
     this.loginInputLayout = loginInputLayout;
     this.password = password;
     this.passwordInputLayout = passwordInputLayout;
@@ -86,15 +92,21 @@ public final class ActivityLoginBinding implements ViewBinding {
     missingId: {
       ConstraintLayout container = (ConstraintLayout) rootView;
 
+      id = R.id.intro_textview;
+      MaterialTextView introTextview = ViewBindings.findChildViewById(rootView, id);
+      if (introTextview == null) {
+        break missingId;
+      }
+
       id = R.id.loading;
       ProgressBar loading = ViewBindings.findChildViewById(rootView, id);
       if (loading == null) {
         break missingId;
       }
 
-      id = R.id.login;
-      Button login = ViewBindings.findChildViewById(rootView, id);
-      if (login == null) {
+      id = R.id.login_button;
+      MaterialButton loginButton = ViewBindings.findChildViewById(rootView, id);
+      if (loginButton == null) {
         break missingId;
       }
 
@@ -122,8 +134,8 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityLoginBinding((ConstraintLayout) rootView, container, loading, login,
-          loginInputLayout, password, passwordInputLayout, username);
+      return new ActivityLoginBinding((ConstraintLayout) rootView, container, introTextview,
+          loading, loginButton, loginInputLayout, password, passwordInputLayout, username);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
