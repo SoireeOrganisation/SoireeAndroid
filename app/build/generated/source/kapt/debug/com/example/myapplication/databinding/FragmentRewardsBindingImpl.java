@@ -14,26 +14,28 @@ public class FragmentRewardsBindingImpl extends FragmentRewardsBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.bonus_count, 1);
+        sViewsWithIds.put(R.id.swipe_refresh_layout, 1);
         sViewsWithIds.put(R.id.recyclerview_rewards, 2);
+        sViewsWithIds.put(R.id.status_text_view, 3);
     }
     // views
     @NonNull
-    private final androidx.core.widget.NestedScrollView mboundView0;
+    private final androidx.constraintlayout.widget.ConstraintLayout mboundView0;
     // variables
     // values
     // listeners
     // Inverse Binding Event Handlers
 
     public FragmentRewardsBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 3, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 4, sIncludes, sViewsWithIds));
     }
     private FragmentRewardsBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (com.google.android.material.textview.MaterialTextView) bindings[1]
             , (androidx.recyclerview.widget.RecyclerView) bindings[2]
+            , (com.google.android.material.textview.MaterialTextView) bindings[3]
+            , (androidx.swiperefreshlayout.widget.SwipeRefreshLayout) bindings[1]
             );
-        this.mboundView0 = (androidx.core.widget.NestedScrollView) bindings[0];
+        this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);
         setRootTag(root);
         // listeners

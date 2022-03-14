@@ -4,17 +4,60 @@ package com.example.myapplication.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
+import android.widget.TableLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.example.myapplication.R;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.textview.MaterialTextView;
 import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class FragmentReviewBinding extends ViewDataBinding {
-  protected FragmentReviewBinding(Object _bindingComponent, View _root, int _localFieldCount) {
+  @NonNull
+  public final MaterialTextView badText;
+
+  @NonNull
+  public final MaterialButton buttonSubmit;
+
+  @NonNull
+  public final MaterialTextView excellentText;
+
+  @NonNull
+  public final MaterialTextView goodText;
+
+  @NonNull
+  public final MaterialTextView noneText;
+
+  @NonNull
+  public final MaterialTextView normalText;
+
+  @NonNull
+  public final MaterialTextView poorText;
+
+  @NonNull
+  public final ProgressBar progressBar;
+
+  @NonNull
+  public final TableLayout tableLayout;
+
+  protected FragmentReviewBinding(Object _bindingComponent, View _root, int _localFieldCount,
+      MaterialTextView badText, MaterialButton buttonSubmit, MaterialTextView excellentText,
+      MaterialTextView goodText, MaterialTextView noneText, MaterialTextView normalText,
+      MaterialTextView poorText, ProgressBar progressBar, TableLayout tableLayout) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.badText = badText;
+    this.buttonSubmit = buttonSubmit;
+    this.excellentText = excellentText;
+    this.goodText = goodText;
+    this.noneText = noneText;
+    this.normalText = normalText;
+    this.poorText = poorText;
+    this.progressBar = progressBar;
+    this.tableLayout = tableLayout;
   }
 
   @NonNull

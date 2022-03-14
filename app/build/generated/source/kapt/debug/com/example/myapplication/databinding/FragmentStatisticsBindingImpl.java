@@ -13,23 +13,29 @@ public class FragmentStatisticsBindingImpl extends FragmentStatisticsBinding  {
     private static final android.util.SparseIntArray sViewsWithIds;
     static {
         sIncludes = null;
-        sViewsWithIds = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.swipe_refresh_layout, 1);
+        sViewsWithIds.put(R.id.statistics_recyclerView, 2);
+        sViewsWithIds.put(R.id.status_text_view, 3);
     }
     // views
     @NonNull
-    private final android.widget.FrameLayout mboundView0;
+    private final androidx.constraintlayout.widget.ConstraintLayout mboundView0;
     // variables
     // values
     // listeners
     // Inverse Binding Event Handlers
 
     public FragmentStatisticsBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 1, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 4, sIncludes, sViewsWithIds));
     }
     private FragmentStatisticsBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
+            , (androidx.recyclerview.widget.RecyclerView) bindings[2]
+            , (com.google.android.material.textview.MaterialTextView) bindings[3]
+            , (androidx.swiperefreshlayout.widget.SwipeRefreshLayout) bindings[1]
             );
-        this.mboundView0 = (android.widget.FrameLayout) bindings[0];
+        this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);
         setRootTag(root);
         // listeners

@@ -5,84 +5,113 @@
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="23"
+8        android:minSdkVersion="24"
 8-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="31" />
 9-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml
 10
-11    <application
-11-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:5:5-22:19
-12        android:allowBackup="true"
-12-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:6:9-35
-13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.7.0] /home/hardes1/.gradle/caches/transforms-3/a7abddef27dbbbb8f86ea02117ab2cf1/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
-14        android:debuggable="true"
-15        android:extractNativeLibs="false"
-16        android:icon="@mipmap/ic_launcher"
-16-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:7:9-43
-17        android:label="@string/app_name"
-17-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:8:9-41
-18        android:roundIcon="@mipmap/ic_launcher_round"
-18-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:9:9-54
-19        android:screenOrientation="portrait"
-19-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:11:9-45
-20        android:supportsRtl="true"
-20-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:10:9-35
-21        android:testOnly="true"
-22        android:theme="@style/Theme.MyApplication" >
-22-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:12:9-51
-23        <activity
-23-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:13:9-21:20
-24            android:name="com.example.myapplication.ui.MainActivity"
-24-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:14:13-44
-25            android:exported="true" >
-25-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:15:13-36
-26            <intent-filter>
-26-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:16:13-20:29
-27                <action android:name="android.intent.action.MAIN" />
-27-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:17:17-69
-27-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:17:25-66
-28
-29                <category android:name="android.intent.category.LAUNCHER" />
-29-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:19:17-77
-29-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:19:27-74
-30            </intent-filter>
-31        </activity>
-32
-33        <uses-library
-33-->[androidx.window:window:1.0.0] /home/hardes1/.gradle/caches/transforms-3/93c864540c42240b0d48e30eec028c2c/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
-34            android:name="androidx.window.extensions"
-34-->[androidx.window:window:1.0.0] /home/hardes1/.gradle/caches/transforms-3/93c864540c42240b0d48e30eec028c2c/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
-35            android:required="false" />
-35-->[androidx.window:window:1.0.0] /home/hardes1/.gradle/caches/transforms-3/93c864540c42240b0d48e30eec028c2c/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
-36        <uses-library
-36-->[androidx.window:window:1.0.0] /home/hardes1/.gradle/caches/transforms-3/93c864540c42240b0d48e30eec028c2c/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
-37            android:name="androidx.window.sidecar"
-37-->[androidx.window:window:1.0.0] /home/hardes1/.gradle/caches/transforms-3/93c864540c42240b0d48e30eec028c2c/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
-38            android:required="false" />
-38-->[androidx.window:window:1.0.0] /home/hardes1/.gradle/caches/transforms-3/93c864540c42240b0d48e30eec028c2c/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
-39
-40        <provider
-40-->[androidx.emoji2:emoji2:1.0.0] /home/hardes1/.gradle/caches/transforms-3/6ac36d496b6dbee8cf3643131a81563e/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
-41            android:name="androidx.startup.InitializationProvider"
-41-->[androidx.emoji2:emoji2:1.0.0] /home/hardes1/.gradle/caches/transforms-3/6ac36d496b6dbee8cf3643131a81563e/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
-42            android:authorities="com.example.myapplication.androidx-startup"
-42-->[androidx.emoji2:emoji2:1.0.0] /home/hardes1/.gradle/caches/transforms-3/6ac36d496b6dbee8cf3643131a81563e/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
-43            android:exported="false" >
-43-->[androidx.emoji2:emoji2:1.0.0] /home/hardes1/.gradle/caches/transforms-3/6ac36d496b6dbee8cf3643131a81563e/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
-44            <meta-data
-44-->[androidx.emoji2:emoji2:1.0.0] /home/hardes1/.gradle/caches/transforms-3/6ac36d496b6dbee8cf3643131a81563e/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
-45                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-45-->[androidx.emoji2:emoji2:1.0.0] /home/hardes1/.gradle/caches/transforms-3/6ac36d496b6dbee8cf3643131a81563e/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
-46                android:value="androidx.startup" />
-46-->[androidx.emoji2:emoji2:1.0.0] /home/hardes1/.gradle/caches/transforms-3/6ac36d496b6dbee8cf3643131a81563e/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
-47            <meta-data
-47-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/hardes1/.gradle/caches/transforms-3/f8b5376d71b214783b3e06f013529776/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
-48                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-48-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/hardes1/.gradle/caches/transforms-3/f8b5376d71b214783b3e06f013529776/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
-49                android:value="androidx.startup" />
-49-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/hardes1/.gradle/caches/transforms-3/f8b5376d71b214783b3e06f013529776/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
-50        </provider>
-51    </application>
-52
-53</manifest>
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:5:5-67
+11-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:5:22-64
+12
+13    <application
+13-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:7:5-38:19
+14        android:name="com.example.myapplication.application.Controller"
+14-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:8:9-47
+15        android:allowBackup="true"
+15-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:9:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.7.0] /home/hardes1/.gradle/caches/transforms-3/c6132d13ba51881e6c31f804a8afe06c/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:extractNativeLibs="false"
+19        android:icon="@mipmap/ic_launcher"
+19-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:10:9-43
+20        android:label="@string/app_name"
+20-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:11:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:12:9-54
+22        android:screenOrientation="portrait"
+22-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:13:9-45
+23        android:supportsRtl="true"
+23-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:14:9-35
+24        android:testOnly="true"
+25        android:theme="@style/Theme.MyApplication"
+25-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:15:9-51
+26        android:usesCleartextTraffic="true" >
+26-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:16:9-44
+27        <activity
+27-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:17:9-26:20
+28            android:name="com.example.myapplication.ui.activities.splash.SplashActivity"
+28-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:18:13-64
+29            android:exported="true"
+29-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:19:13-36
+30            android:screenOrientation="portrait" >
+30-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:20:13-49
+31            <intent-filter>
+31-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:21:13-24:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:22:17-69
+32-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:22:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:23:17-77
+34-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:23:27-74
+35            </intent-filter>
+36        </activity>
+37        <activity
+37-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:27:9-33:20
+38            android:name="com.example.myapplication.ui.activities.login.LoginActivity"
+38-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:28:13-62
+39            android:exported="false"
+39-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:29:13-37
+40            android:label="@string/title_activity_login"
+40-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:30:13-57
+41            android:screenOrientation="portrait" >
+41-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:31:13-49
+42        </activity>
+43        <activity
+43-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:34:9-37:52
+44            android:name="com.example.myapplication.ui.activities.main.MainActivity"
+44-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:35:13-60
+45            android:exported="false"
+45-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:36:13-37
+46            android:screenOrientation="portrait" />
+46-->/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/AndroidManifest.xml:37:13-49
+47
+48        <uses-library
+48-->[androidx.window:window:1.0.0] /home/hardes1/.gradle/caches/transforms-3/4365d4cda42bbc63935f25d033a4a60e/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+49            android:name="androidx.window.extensions"
+49-->[androidx.window:window:1.0.0] /home/hardes1/.gradle/caches/transforms-3/4365d4cda42bbc63935f25d033a4a60e/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+50            android:required="false" />
+50-->[androidx.window:window:1.0.0] /home/hardes1/.gradle/caches/transforms-3/4365d4cda42bbc63935f25d033a4a60e/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+51        <uses-library
+51-->[androidx.window:window:1.0.0] /home/hardes1/.gradle/caches/transforms-3/4365d4cda42bbc63935f25d033a4a60e/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+52            android:name="androidx.window.sidecar"
+52-->[androidx.window:window:1.0.0] /home/hardes1/.gradle/caches/transforms-3/4365d4cda42bbc63935f25d033a4a60e/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+53            android:required="false" />
+53-->[androidx.window:window:1.0.0] /home/hardes1/.gradle/caches/transforms-3/4365d4cda42bbc63935f25d033a4a60e/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+54
+55        <provider
+55-->[androidx.emoji2:emoji2:1.0.0] /home/hardes1/.gradle/caches/transforms-3/73e8fb63d36c6d56ecf6ea3a703c7a0c/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+56            android:name="androidx.startup.InitializationProvider"
+56-->[androidx.emoji2:emoji2:1.0.0] /home/hardes1/.gradle/caches/transforms-3/73e8fb63d36c6d56ecf6ea3a703c7a0c/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
+57            android:authorities="com.example.myapplication.androidx-startup"
+57-->[androidx.emoji2:emoji2:1.0.0] /home/hardes1/.gradle/caches/transforms-3/73e8fb63d36c6d56ecf6ea3a703c7a0c/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
+58            android:exported="false" >
+58-->[androidx.emoji2:emoji2:1.0.0] /home/hardes1/.gradle/caches/transforms-3/73e8fb63d36c6d56ecf6ea3a703c7a0c/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
+59            <meta-data
+59-->[androidx.emoji2:emoji2:1.0.0] /home/hardes1/.gradle/caches/transforms-3/73e8fb63d36c6d56ecf6ea3a703c7a0c/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+60                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+60-->[androidx.emoji2:emoji2:1.0.0] /home/hardes1/.gradle/caches/transforms-3/73e8fb63d36c6d56ecf6ea3a703c7a0c/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
+61                android:value="androidx.startup" />
+61-->[androidx.emoji2:emoji2:1.0.0] /home/hardes1/.gradle/caches/transforms-3/73e8fb63d36c6d56ecf6ea3a703c7a0c/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
+62            <meta-data
+62-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/hardes1/.gradle/caches/transforms-3/4d557bec6646a32868518fb3d6ad1da2/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+63                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+63-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/hardes1/.gradle/caches/transforms-3/4d557bec6646a32868518fb3d6ad1da2/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+64                android:value="androidx.startup" />
+64-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/hardes1/.gradle/caches/transforms-3/4d557bec6646a32868518fb3d6ad1da2/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+65        </provider>
+66    </application>
+67
+68</manifest>
