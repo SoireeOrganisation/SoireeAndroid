@@ -1,6 +1,5 @@
 package com.example.myapplication.ui.statistics
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -12,7 +11,6 @@ import kotlinx.coroutines.launch
 import java.lang.Exception
 
 
-const val TAG = "StatisticsViewModel"
 
 class StatisticsViewModel : ViewModel() {
     private val _reviewList: MutableLiveData<List<ProcessedReviewData>> = MutableLiveData(listOf())
@@ -29,8 +27,8 @@ class StatisticsViewModel : ViewModel() {
 
     private fun convertToProcessedReviewData(list: List<ReviewData>): List<ProcessedReviewData> {
         return list.groupBy { it.category.id }.values.map {
-            ProcessedReviewData(
-                it[0].category.name,
+            ProcessedReviewData(it[0].category.id,
+                    it [0].category.name,
                 (it.sumOf { it.score } / it.size.toDouble()))
         }.toList()
     }
@@ -44,8 +42,7 @@ class StatisticsViewModel : ViewModel() {
                 println(rawData.size)
                 _reviewList.value = convertToProcessedReviewData(rawData)
             } catch (e: Exception) {
-                }
-            finally {
+            } finally {
                 _refreshStatus.value = false
             }
         }

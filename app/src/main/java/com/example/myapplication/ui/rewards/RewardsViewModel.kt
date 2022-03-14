@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.myapplication.data.BonusData
+import com.example.myapplication.data.RewardsData
 import com.example.myapplication.network.Client
 import kotlinx.coroutines.launch
 import timber.log.Timber
@@ -12,8 +12,8 @@ import java.lang.Exception
 
 
 class RewardsViewModel : ViewModel() {
-    private val _bonusesList: MutableLiveData<List<BonusData>> = MutableLiveData(mutableListOf())
-    val bonusesList: LiveData<List<BonusData>>
+    private val _bonusesList: MutableLiveData<List<RewardsData>> = MutableLiveData(mutableListOf())
+    val bonusesList: LiveData<List<RewardsData>>
         get() = _bonusesList
     private val _refreshStatus: MutableLiveData<Boolean> = MutableLiveData(false)
     val refreshStatus: LiveData<Boolean>

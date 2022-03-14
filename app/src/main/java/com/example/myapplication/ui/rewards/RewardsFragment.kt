@@ -10,11 +10,9 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.example.myapplication.R
-import com.example.myapplication.adapters.RewardsRecyclerAdapter
-import com.example.myapplication.data.BonusData
+import com.example.myapplication.adapters.rewardsAdapter.RewardsRecyclerAdapter
 import com.example.myapplication.databinding.FragmentRewardsBinding
 import timber.log.Timber
-import kotlin.random.Random
 
 
 class RewardsFragment : Fragment() {
@@ -24,6 +22,10 @@ class RewardsFragment : Fragment() {
     private val binding: FragmentRewardsBinding
         get() = _binding!!
     private val viewModel: RewardsViewModel by activityViewModels()
+    private val adapter : RewardsRecyclerAdapter by lazy {
+        RewardsRecyclerAdapter()
+    }
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -36,11 +38,9 @@ class RewardsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.recyclerviewRewards.adapter = adapter
         viewModel.bonusesList.observe(viewLifecycleOwner) {
-            val adapter = RewardsRecyclerAdapter(
-                requireContext(), it
-            )
-            binding.recyclerviewRewards.adapter = adapter
+            adapter.setData(it)
         }
         viewModel.refreshStatus.observe(viewLifecycleOwner) {
             binding.swipeRefreshLayout.isRefreshing = it

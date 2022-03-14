@@ -24,7 +24,7 @@ interface ApiService {
     suspend fun getStaff(@Query("key") key: String = DEBUG_KEY): List<StaffData>
 
     @GET("api/bonuses")
-    suspend fun getBonuses(@Query("key") key: String = DEBUG_KEY): List<BonusData>
+    suspend fun getBonuses(@Query("key") key: String = DEBUG_KEY): List<RewardsData>
 
     @GET("api/reviews")
     suspend fun getReviews(@Query("key") key: String = DEBUG_KEY): List<ReviewData> // was review

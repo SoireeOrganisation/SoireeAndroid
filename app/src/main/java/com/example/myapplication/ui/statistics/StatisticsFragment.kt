@@ -10,7 +10,7 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.example.myapplication.R
-import com.example.myapplication.adapters.UserReviewRecyclerAdapter
+import com.example.myapplication.adapters.userAdapter.UserReviewRecyclerAdapter
 import com.example.myapplication.databinding.FragmentStatisticsBinding
 import timber.log.Timber
 
@@ -21,6 +21,10 @@ class StatisticsFragment : Fragment() {
     private var _binding: FragmentStatisticsBinding? = null
     private val binding: FragmentStatisticsBinding
         get() = _binding!!
+
+    private val adapter: UserReviewRecyclerAdapter by lazy {
+        UserReviewRecyclerAdapter(requireContext())
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,11 +37,12 @@ class StatisticsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.statisticsRecyclerView.adapter = adapter
         viewModel.refreshStatus.observe(viewLifecycleOwner) {
             binding.swipeRefreshLayout.isRefreshing = it
         }
         viewModel.reviewList.observe(viewLifecycleOwner) {
-            binding.statisticsRecyclerView.adapter = UserReviewRecyclerAdapter(requireContext(), it)
+            adapter.setData(it)
         }
         binding.swipeRefreshLayout.setOnRefreshListener {
             viewModel.getReviews()
