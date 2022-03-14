@@ -37,7 +37,7 @@ class RewardsViewModel : ViewModel() {
                     _responseStatus.value = DataResponseState.FULL
             } catch (e: Exception) {
                 Timber.d(e)
-                DataResponseState.ERROR
+                _responseStatus.value = DataResponseState.ERROR
             }
         }
     }

@@ -10,14 +10,12 @@ import com.example.myapplication.data.StaffData
 import com.example.myapplication.data.StaffRates
 import com.example.myapplication.network.Client
 import com.example.myapplication.network.DEBUG_KEY
+import com.example.myapplication.network.DataResponseState
 import com.example.myapplication.network.ResponseState
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
 import kotlinx.coroutines.launch
 import timber.log.Timber
-
-
-
 
 
 class ReviewViewModel(val staffData: StaffData) : ViewModel() {
@@ -30,14 +28,22 @@ class ReviewViewModel(val staffData: StaffData) : ViewModel() {
             field = value
         }
 
+    var dataResponseState: MutableLiveData<DataResponseState> =
+        MutableLiveData(DataResponseState.NONE)
+        private set(value) {
+            field = value
+        }
 
     fun getCategories() {
         viewModelScope.launch {
+            dataResponseState.value = DataResponseState.LOADING
             Timber.d("getting categories...")
             try {
                 _categoriesList.value = Client.retrofitService.getCategories()
+                dataResponseState.value = DataResponseState.FULL
             } catch (e: Exception) {
                 Timber.d(e)
+                dataResponseState.value = DataResponseState.ERROR
             }
         }
     }
@@ -54,14 +60,6 @@ class ReviewViewModel(val staffData: StaffData) : ViewModel() {
                 }
                 val data = StaffRates(DEBUG_KEY, marksList, staffData.id)
 
-                val moshi = Moshi.Builder().build()
-                val jsonAdapter: JsonAdapter<StaffRates> =
-                    moshi.adapter(StaffRates::class.java)
-
-                val json = jsonAdapter.toJson(data)
-                Timber.d("Json data: $json")
-
-                Timber.d("Raw review: $data")
                 val response = Client.retrofitService.postMarks(data)
                 Timber.d("response ${response.body()}")
                 if (response.isSuccessful) {
@@ -72,6 +70,7 @@ class ReviewViewModel(val staffData: StaffData) : ViewModel() {
 
             } catch (e: Exception) {
                 Timber.d(e)
+                responseState.value = ResponseState.ERROR
             }
         }
         Timber.d("Post done successful")

@@ -51,6 +51,7 @@ class RewardsFragment : Fragment() {
                     binding.statusTextView.visibility = View.INVISIBLE
                 }
                 DataResponseState.ERROR -> {
+                    Timber.d("error happened")
                     binding.swipeRefreshLayout.isRefreshing = false
                     binding.statusTextView.text = resources.getString(R.string.refresh_error)
                     binding.statusTextView.visibility = View.VISIBLE

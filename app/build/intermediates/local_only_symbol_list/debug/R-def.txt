@@ -81,6 +81,7 @@ string exit_options_menu_text
 string good_text
 string hello_blank_fragment
 string login_hint_text
+string menu_error
 string normal_text
 string not_all_fields_filled
 string password_hint_text

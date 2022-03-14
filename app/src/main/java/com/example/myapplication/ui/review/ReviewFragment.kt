@@ -6,12 +6,15 @@ import androidx.fragment.app.Fragment
 import android.widget.CompoundButton
 import android.widget.TableRow
 import android.widget.Toast
+import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import androidx.navigation.ui.NavigationUI
 import com.example.myapplication.R
 import com.example.myapplication.data.Category
 import com.example.myapplication.databinding.FragmentReviewBinding
+import com.example.myapplication.network.DataResponseState
 import com.example.myapplication.network.ResponseState
 import com.google.android.material.radiobutton.MaterialRadioButton
 import com.google.android.material.textview.MaterialTextView
@@ -45,6 +48,37 @@ class ReviewFragment : Fragment() {
         binding.buttonSubmit.setOnClickListener {
             getMarks()
         }
+
+        viewModel.dataResponseState.observe(viewLifecycleOwner) {
+            when (it) {
+                DataResponseState.LOADING -> {
+                    binding.tableLayout.visibility = View.INVISIBLE
+                    binding.buttonSubmit.visibility = View.INVISIBLE
+                    binding.progressBar.visibility = View.VISIBLE
+                    binding.statusTextView.visibility = View.INVISIBLE
+                }
+                DataResponseState.ERROR -> {
+                    Timber.d("error happened")
+                    binding.progressBar.visibility = View.INVISIBLE
+                    binding.statusTextView.text = resources.getString(R.string.menu_error)
+                    binding.statusTextView.visibility = View.VISIBLE
+                }
+                DataResponseState.FULL -> {
+                    binding.tableLayout.visibility = View.VISIBLE
+                    binding.buttonSubmit.visibility = View.VISIBLE
+                    binding.progressBar.visibility = View.INVISIBLE
+                    binding.statusTextView.visibility = View.INVISIBLE
+                }
+                else -> {
+                    binding.buttonSubmit.visibility = View.INVISIBLE
+                    binding.progressBar.visibility = View.INVISIBLE
+                    binding.statusTextView.visibility = View.INVISIBLE
+                    binding.tableLayout.visibility = View.INVISIBLE
+                    Timber.d("None")
+                }
+            }
+        }
+
         viewModel.responseState.observe(viewLifecycleOwner) {
             binding.progressBar.visibility = View.INVISIBLE
             when (it) {
@@ -126,6 +160,20 @@ class ReviewFragment : Fragment() {
         }
     }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.refresh -> {
+                Timber.d("fragment refreshed")
+                viewModel.getCategories()
+            }
+        }
+        return NavigationUI.onNavDestinationSelected(
+            item,
+            findNavController()
+        ) || super.onOptionsItemSelected(item)
+    }
+
+
     private fun resetButtons(tr: TableRow, btn: CompoundButton, state: Boolean) {
         if (!state)
             return
@@ -150,7 +198,6 @@ class ReviewFragment : Fragment() {
         label.layoutParams = params
         return label
     }
-
 
 
 }
