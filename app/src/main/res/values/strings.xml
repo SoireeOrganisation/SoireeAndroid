@@ -25,4 +25,8 @@
     <string name="auth_error">Internet connection error</string>
     <string name="refresh_options_menu_text">Refresh</string>
     <string name="exit_options_menu_text">Exit</string>
+    <string name="refresh_error">Internet connection error. Swipe down to refresh data.</string>
+    <string name="staff_done_empty">You have rated all teammates today successfully! Go back tomorrow.</string>
+    <string name="statistics_empty">Colleagues have not rated you yet, come back later. </string>
+    <string name="rewards_empty">The director hasn\'t given you any awards yet, come back later.</string>
 </resources>

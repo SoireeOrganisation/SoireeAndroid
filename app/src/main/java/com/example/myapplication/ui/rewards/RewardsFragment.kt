@@ -12,6 +12,7 @@ import androidx.navigation.ui.NavigationUI
 import com.example.myapplication.R
 import com.example.myapplication.adapters.rewardsAdapter.RewardsRecyclerAdapter
 import com.example.myapplication.databinding.FragmentRewardsBinding
+import com.example.myapplication.network.DataResponseState
 import timber.log.Timber
 
 
@@ -42,9 +43,37 @@ class RewardsFragment : Fragment() {
         viewModel.bonusesList.observe(viewLifecycleOwner) {
             adapter.setData(it)
         }
-        viewModel.refreshStatus.observe(viewLifecycleOwner) {
-            binding.swipeRefreshLayout.isRefreshing = it
+
+        viewModel.responseStatus.observe(viewLifecycleOwner) {
+            when (it) {
+                DataResponseState.LOADING -> {
+                    binding.swipeRefreshLayout.isRefreshing = true
+                    binding.statusTextView.visibility = View.INVISIBLE
+                }
+                DataResponseState.ERROR -> {
+                    binding.swipeRefreshLayout.isRefreshing = false
+                    binding.statusTextView.text = resources.getString(R.string.refresh_error)
+                    binding.statusTextView.visibility = View.VISIBLE
+                }
+                DataResponseState.EMPTY -> {
+                    Timber.d("is empty")
+                    binding.swipeRefreshLayout.isRefreshing = false
+                    binding.statusTextView.text = resources.getString(R.string.rewards_empty)
+                    binding.statusTextView.visibility = View.VISIBLE
+                }
+                DataResponseState.FULL -> {
+                    binding.swipeRefreshLayout.isRefreshing = false
+                    binding.statusTextView.visibility = View.INVISIBLE
+                }
+                else -> {
+                    binding.swipeRefreshLayout.isRefreshing = false
+                    binding.statusTextView.visibility = View.INVISIBLE
+                    Timber.d("None")
+                }
+            }
         }
+
+
         binding.swipeRefreshLayout.setOnRefreshListener {
             viewModel.getBonuses()
         }

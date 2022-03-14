@@ -13,6 +13,7 @@ import androidx.navigation.ui.NavigationUI
 import com.example.myapplication.R
 import com.example.myapplication.adapters.staffAdapter.StaffRecyclerAdapter
 import com.example.myapplication.databinding.FragmentStaffBinding
+import com.example.myapplication.network.DataResponseState
 import timber.log.Timber
 
 class StaffFragment : Fragment() {
@@ -21,10 +22,10 @@ class StaffFragment : Fragment() {
     private var _binding: FragmentStaffBinding? = null
     private val binding: FragmentStaffBinding
         get() = _binding!!
-    private val staffAdapter : StaffRecyclerAdapter by lazy {
+    private val staffAdapter: StaffRecyclerAdapter by lazy {
         StaffRecyclerAdapter()
     }
-    private val args : StaffFragmentArgs by navArgs()
+    private val args: StaffFragmentArgs by navArgs()
 
 
     override fun onCreateView(
@@ -42,8 +43,33 @@ class StaffFragment : Fragment() {
         viewModel.staffDataList.observe(viewLifecycleOwner) {
             staffAdapter.setData(it)
         }
-        viewModel.refreshStatus.observe(viewLifecycleOwner) {
-            binding.swipeRefreshLayout.isRefreshing = it
+        viewModel.responseStatus.observe(viewLifecycleOwner) {
+            when (it) {
+                DataResponseState.LOADING -> {
+                    binding.swipeRefreshLayout.isRefreshing = true
+                    binding.statusTextView.visibility = View.INVISIBLE
+                }
+                DataResponseState.ERROR -> {
+                    binding.swipeRefreshLayout.isRefreshing = false
+                    binding.statusTextView.text = resources.getString(R.string.refresh_error)
+                    binding.statusTextView.visibility = View.VISIBLE
+                }
+                DataResponseState.EMPTY -> {
+                    Timber.d("is empty")
+                    binding.swipeRefreshLayout.isRefreshing = false
+                    binding.statusTextView.text = resources.getString(R.string.staff_done_empty)
+                    binding.statusTextView.visibility = View.VISIBLE
+                }
+                DataResponseState.FULL -> {
+                    binding.swipeRefreshLayout.isRefreshing = false
+                    binding.statusTextView.visibility = View.INVISIBLE
+                }
+                else -> {
+                    binding.swipeRefreshLayout.isRefreshing = false
+                    binding.statusTextView.visibility = View.INVISIBLE
+                    Timber.d("None")
+                }
+            }
         }
         binding.swipeRefreshLayout.setOnRefreshListener {
             viewModel.downloadStaff()
@@ -51,7 +77,7 @@ class StaffFragment : Fragment() {
         if (viewModel.firstDownload) {
             viewModel.downloadStaff()
         }
-        if(args.removeId != -1){
+        if (args.removeId != -1) {
             viewModel.removeWithId(args.removeId)
         }
     }

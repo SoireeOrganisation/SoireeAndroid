@@ -9,7 +9,6 @@ import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import androidx.navigation.ui.NavigationUI
 import com.example.myapplication.R
 import com.example.myapplication.data.Category
 import com.example.myapplication.databinding.FragmentReviewBinding
