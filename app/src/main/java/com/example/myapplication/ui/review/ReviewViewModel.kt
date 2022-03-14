@@ -12,8 +12,6 @@ import com.example.myapplication.network.Client
 import com.example.myapplication.network.DEBUG_KEY
 import com.example.myapplication.network.DataResponseState
 import com.example.myapplication.network.ResponseState
-import com.squareup.moshi.JsonAdapter
-import com.squareup.moshi.Moshi
 import kotlinx.coroutines.launch
 import timber.log.Timber
 
@@ -56,7 +54,7 @@ class ReviewViewModel(val staffData: StaffData) : ViewModel() {
             try {
                 val marksList = mutableListOf<Rate>()
                 for (i in rawRates.indices) {
-                    marksList.add(Rate(categoriesList.value!![i].id, "none", 2 * rawRates[i]))
+                    marksList.add(Rate(categoriesList.value!![i].id, "", 2 * rawRates[i]))
                 }
                 val data = StaffRates(DEBUG_KEY, marksList, staffData.id)
 

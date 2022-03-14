@@ -13,7 +13,6 @@ import java.security.MessageDigest
 const val BASE_URL = "http://20.113.130.40"
 var DEBUG_KEY = ""
     private set
-const val DEBUG_KEY_REVIEW = "9b9998f9c8abc6961a0bdb834471fe4a"
 val retrofit: Retrofit =
     Retrofit.Builder().addConverterFactory(MoshiConverterFactory.create()).baseUrl(
         BASE_URL

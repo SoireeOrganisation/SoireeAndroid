@@ -100,4 +100,5 @@ string statistics_empty
 string submit_text
 string title_activity_login
 string your_points
+style Theme.MainActivityTheme
 style Theme.MyApplication

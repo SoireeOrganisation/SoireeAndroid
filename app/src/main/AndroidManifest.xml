@@ -17,7 +17,8 @@
         <activity
             android:name=".ui.activities.splash.SplashActivity"
             android:exported="true"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MainActivityTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -34,6 +35,7 @@
         <activity
             android:name=".ui.activities.main.MainActivity"
             android:exported="false"
+            android:theme="@style/Theme.MainActivityTheme"
             android:screenOrientation="portrait" />
     </application>
 

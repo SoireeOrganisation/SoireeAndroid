@@ -27,7 +27,8 @@
         <activity
             android:name="com.example.myapplication.ui.activities.splash.SplashActivity"
             android:exported="true"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MainActivityTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -43,7 +44,8 @@
         <activity
             android:name="com.example.myapplication.ui.activities.main.MainActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MainActivityTheme" />
 
         <uses-library
             android:name="androidx.window.extensions"

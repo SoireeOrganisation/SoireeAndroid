@@ -42,12 +42,16 @@ public abstract class FragmentReviewBinding extends ViewDataBinding {
   public final ProgressBar progressBar;
 
   @NonNull
+  public final MaterialTextView statusTextView;
+
+  @NonNull
   public final TableLayout tableLayout;
 
   protected FragmentReviewBinding(Object _bindingComponent, View _root, int _localFieldCount,
       MaterialTextView badText, MaterialButton buttonSubmit, MaterialTextView excellentText,
       MaterialTextView goodText, MaterialTextView noneText, MaterialTextView normalText,
-      MaterialTextView poorText, ProgressBar progressBar, TableLayout tableLayout) {
+      MaterialTextView poorText, ProgressBar progressBar, MaterialTextView statusTextView,
+      TableLayout tableLayout) {
     super(_bindingComponent, _root, _localFieldCount);
     this.badText = badText;
     this.buttonSubmit = buttonSubmit;
@@ -57,6 +61,7 @@ public abstract class FragmentReviewBinding extends ViewDataBinding {
     this.normalText = normalText;
     this.poorText = poorText;
     this.progressBar = progressBar;
+    this.statusTextView = statusTextView;
     this.tableLayout = tableLayout;
   }
 
