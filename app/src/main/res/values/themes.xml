@@ -12,6 +12,7 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/custom_background</item>
     </style>
 
     <style name="Theme.MainActivityTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
@@ -26,6 +27,7 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/custom_background</item>
     </style>
 
 
@@ -40,6 +42,18 @@
         <item name="android:layout_marginStart">20dp</item>
         <item name="android:layout_marginEnd">20dp</item>
         <item name="helperText">@string/obligatory_text</item>
+    </style>
+
+    <style name="CustomTextStyle" parent="@style/TextAppearance.AppCompat.Medium">
+        <item name="font">@font/roboto</item>
+        <item name="android:paddingStart">6dp</item>
+        <item name="android:paddingEnd">6dp</item>
+    </style>
+
+    <style name="CustomErrorTextStyle" parent="CustomTextStyle">
+        <item name ="android:gravity">center</item>
+        <item name ="font">@font/roboto_bold</item>
+        <item name = "android:textSize">20sp</item>
     </style>
 
 

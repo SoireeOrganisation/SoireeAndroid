@@ -1290,6 +1290,8 @@ int color cardview_light_background 0x7f06002b
 int color cardview_shadow_end_color 0x7f06002c
 int color cardview_shadow_start_color 0x7f06002d
 int color checkbox_themeable_attribute_color 0x7f06002e
+int color custom_background 0x7f060261
+int color custom_background_night 0x7f060262
 int color custom_night_primary 0x7f06002f
 int color custom_night_primary_dark 0x7f060030
 int color custom_night_primary_light 0x7f060031
@@ -2600,6 +2602,8 @@ int drawable test_level_drawable 0x7f08009a
 int drawable tooltip_frame_dark 0x7f08009b
 int drawable tooltip_frame_light 0x7f08009c
 int font cedarville_cursive 0x7f090000
+int font roboto 0x7f090001
+int font roboto_bold 0x7f090002
 int id ALT 0x7f0a0000
 int id BOTTOM_END 0x7f0a0001
 int id BOTTOM_START 0x7f0a0002
@@ -2691,7 +2695,6 @@ int id auto 0x7f0a0057
 int id autoComplete 0x7f0a0058
 int id autoCompleteToEnd 0x7f0a0059
 int id autoCompleteToStart 0x7f0a005a
-int id bad_text 0x7f0a005b
 int id barrier 0x7f0a005c
 int id baseline 0x7f0a005d
 int id beginOnFirstDraw 0x7f0a005e
@@ -2791,7 +2794,6 @@ int id endToStart 0x7f0a00bb
 int id end_padder 0x7f0a00bc
 int id enterAlways 0x7f0a00bd
 int id enterAlwaysCollapsed 0x7f0a00be
-int id excellent_text 0x7f0a00bf
 int id exit 0x7f0a00c0
 int id exitUntilCollapsed 0x7f0a00c1
 int id expand_activities_button 0x7f0a00c2
@@ -2811,7 +2813,6 @@ int id frost 0x7f0a00cf
 int id ghost_view 0x7f0a00d0
 int id ghost_view_holder 0x7f0a00d1
 int id gone 0x7f0a00d2
-int id good_text 0x7f0a00d3
 int id graph 0x7f0a00d4
 int id graph_wrap 0x7f0a00d5
 int id group_divider 0x7f0a00d6
@@ -2936,9 +2937,7 @@ int id neverCompleteToStart 0x7f0a014c
 int id noScroll 0x7f0a014d
 int id noState 0x7f0a014e
 int id none 0x7f0a014f
-int id none_text 0x7f0a0150
 int id normal 0x7f0a0151
-int id normal_text 0x7f0a0152
 int id north 0x7f0a0153
 int id notification_background 0x7f0a0154
 int id notification_main_column 0x7f0a0155
@@ -2966,7 +2965,6 @@ int id patronymic_textview 0x7f0a016a
 int id peekHeight 0x7f0a016b
 int id percent 0x7f0a016c
 int id pin 0x7f0a016d
-int id poor_text 0x7f0a016e
 int id position 0x7f0a016f
 int id postLayout 0x7f0a0170
 int id progress_bar 0x7f0a0171
@@ -3377,6 +3375,7 @@ int string bad_text 0x7f120022
 int string bottom_sheet_behavior 0x7f120023
 int string bottomsheet_action_expand_halfway 0x7f120024
 int string button_login_text 0x7f120025
+int string category_name 0x7f1200a6
 int string character_counter_content_description 0x7f120026
 int string character_counter_overflowed_content_description 0x7f120027
 int string character_counter_pattern 0x7f120028
@@ -3782,7 +3781,9 @@ int style CardView 0x7f130111
 int style CardView_Dark 0x7f130112
 int style CardView_Light 0x7f130113
 int style CustomButtonStyle 0x7f130114
+int style CustomErrorTextStyle 0x7f130404
 int style CustomTextLayoutStyle 0x7f130115
+int style CustomTextStyle 0x7f130403
 int style EmptyTheme 0x7f130116
 int style MaterialAlertDialog_Material3 0x7f130117
 int style MaterialAlertDialog_Material3_Body_Text 0x7f130118

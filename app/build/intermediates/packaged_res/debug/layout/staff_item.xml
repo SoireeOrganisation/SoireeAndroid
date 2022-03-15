@@ -17,40 +17,49 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/name_textview"
+            android:id="@+id/surname_textview"
+            style="@style/CustomTextStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/vertical_margin_textview"
             android:layout_marginTop="8dp"
+            android:layout_marginStart="@dimen/vertical_margin_textview"
             android:layout_marginBottom="@dimen/vertical_margin_textview"
+            android:paddingEnd="0dp"
             android:textSize="@dimen/main_text_size"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="George" />
+            tools:text="Ustinov" />
+
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/surname_textview"
+            android:id="@+id/name_textview"
+            style="@style/CustomTextStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
+            android:paddingEnd="0dp"
             android:textSize="@dimen/main_text_size"
-            app:layout_constraintBottom_toBottomOf="@+id/name_textview"
-            app:layout_constraintStart_toEndOf="@id/name_textview"
-            app:layout_constraintTop_toTopOf="@+id/name_textview"
-            tools:text="Ustinov" />
-        <com.google.android.material.textview.MaterialTextView
-            android:id = "@+id/patronymic_textview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/main_text_size"
-            app:layout_constraintTop_toTopOf="@id/surname_textview"
-            app:layout_constraintBottom_toBottomOf="@id/surname_textview"
+            app:layout_constraintBottom_toBottomOf="@+id/surname_textview"
             app:layout_constraintStart_toEndOf="@id/surname_textview"
+            app:layout_constraintTop_toTopOf="@+id/surname_textview"
+            tools:text="George" />
+
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/patronymic_textview"
+            style="@style/CustomTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            tools:text="Borisovich"
-            />
+            android:textSize="@dimen/main_text_size"
+            app:layout_constraintBottom_toBottomOf="@id/name_textview"
+            app:layout_constraintStart_toEndOf="@id/name_textview"
+            app:layout_constraintTop_toTopOf="@id/name_textview"
+            tools:text="Borisovich" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>

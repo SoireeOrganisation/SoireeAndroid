@@ -8,6 +8,10 @@
         "source": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/res/layout/statistics_item.xml"
     },
     {
+        "merged": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/build/intermediates/merged_res/debug/font_roboto.xml.flat",
+        "source": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/res/font/roboto.xml"
+    },
+    {
         "merged": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/build/intermediates/merged_res/debug/menu_options_menu.xml.flat",
         "source": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/res/menu/options_menu.xml"
     },
@@ -26,6 +30,10 @@
     {
         "merged": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.webp.flat",
         "source": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/res/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/build/intermediates/merged_res/debug/font_roboto_bold.xml.flat",
+        "source": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/res/font/roboto_bold.xml"
     },
     {
         "merged": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",

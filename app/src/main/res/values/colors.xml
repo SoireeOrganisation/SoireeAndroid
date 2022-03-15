@@ -20,4 +20,6 @@
     <color name="custom_night_secondary_light">#5472d3</color>
     <color name="custom_night_secondary_dark">#002171</color>
     <color name="custom_red">#dd2c00</color>
+    <color name="custom_background">#F8F8F8</color>
+    <color name="custom_background_night">#ECECEC</color>
 </resources>

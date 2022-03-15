@@ -16,6 +16,7 @@
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/category_name_textview"
+            style="@style/CustomTextStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/horizontal_margin_textview"
@@ -29,6 +30,7 @@
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/category_average_textview"
+            style="@style/CustomTextStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/horizontal_margin_textview"

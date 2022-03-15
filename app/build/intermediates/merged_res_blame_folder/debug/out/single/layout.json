@@ -32,6 +32,10 @@
         "source": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/res/layout/rewards_item.xml"
     },
     {
+        "merged": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/statistics_item.xml",
+        "source": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/res/layout/statistics_item.xml"
+    },
+    {
         "merged": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/staff_item.xml",
         "source": "/home/hardes1/AndroidStudioProjects/Soiree/SoireeAndroid/app/src/main/res/layout/staff_item.xml"
     },

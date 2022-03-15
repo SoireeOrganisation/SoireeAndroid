@@ -151,6 +151,7 @@ class ReviewFragment : Fragment() {
                     TableRow.LayoutParams.WRAP_CONTENT
                 )
                 child.id = i
+                child.text = i.toString()
                 child.setOnCheckedChangeListener { buttonView, isChecked ->
                     resetButtons(tr, buttonView, isChecked)
                 }
@@ -190,6 +191,7 @@ class ReviewFragment : Fragment() {
         val label = MaterialTextView(requireContext())
         label.id = View.generateViewId()
         label.text = s
+        label.setTextAppearance(R.style.CustomTextStyle)
         val params = TableRow.LayoutParams(
             TableRow.LayoutParams.MATCH_PARENT,
             TableRow.LayoutParams.WRAP_CONTENT

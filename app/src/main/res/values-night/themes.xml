@@ -12,6 +12,8 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/custom_background_night</item>
+
     </style>
 
 
@@ -21,12 +23,13 @@
         <item name="colorPrimaryVariant">@color/custom_night_primary_dark</item>
         <item name="colorOnPrimary">@color/custom_night_primary_light</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/custom_night_secondary</item>
+        <item name="colorSecondary">@color/white</item>
         <item name="colorSecondaryVariant">@color/custom_night_secondary_dark</item>
         <item name="colorOnSecondary">@color/custom_night_secondary_light</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/custom_background_night</item>
     </style>
 
 </resources>
